@@ -65,7 +65,7 @@ class HerbalBAPS:
     self.MAX_SCROLL_RETRIES = 10
     self.SCROLL_PAUSE_TIME = 5
     self.MAX_RETRIES = 3
-    self.PAGE_LOAD_TIMEOUT = 20
+    self.PAGE_LOAD_TIMEOUT = 30
     self.REQUEST_TIMEOUT = 30
   
   def _setup_logging(self):
