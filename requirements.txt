@@ -1,0 +1,9 @@
+beautifulsoup4
+selenium
+selenium-wire
+tqdm
+mysql-connector-python
+pandas
+requests
+cloudscraper
+blinker==1.4

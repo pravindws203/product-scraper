@@ -1,0 +1,535 @@
+2025-05-20 14:23:24,703 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:23:24,703 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:23:44,734 --|-- HerbalBAPS --|-- WARNING --|--  Timeout loading https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:23:48,738 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:25:06,099 --|-- HerbalBAPS --|-- INFO --|--  Collected 133 unique product URLs so far.
+2025-05-20 14:25:06,129 --|-- HerbalBAPS --|-- INFO --|--  Clicking Next...
+2025-05-20 14:25:12,193 --|-- HerbalBAPS --|-- INFO --|--  Collected 133 unique product URLs so far.
+2025-05-20 14:25:12,232 --|-- HerbalBAPS --|-- ERROR --|--  No Next button found. Exiting.
+2025-05-20 14:25:12,232 --|-- HerbalBAPS --|-- INFO --|--  Total product URLs collected: 133
+2025-05-20 14:25:12,232 --|-- HerbalBAPS --|-- INFO --|--  Found 133 product URLs to scrape
+2025-05-20 14:32:39,120 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:32:39,120 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:33:02,713 --|-- HerbalBAPS --|-- INFO --|--  Collected 13 unique product URLs so far.
+2025-05-20 14:33:02,760 --|-- HerbalBAPS --|-- INFO --|--  Clicking Next button...
+2025-05-20 14:33:08,514 --|-- HerbalBAPS --|-- ERROR --|--  Error while extracting product URLs: 'NoneType' object has no attribute 'find_all'
+2025-05-20 14:33:08,514 --|-- HerbalBAPS --|-- INFO --|--  Total product URLs collected: 13
+2025-05-20 14:33:08,514 --|-- HerbalBAPS --|-- INFO --|--  Found 13 product URLs to scrape
+2025-05-20 14:35:35,964 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:35:35,965 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:35:55,982 --|-- HerbalBAPS --|-- WARNING --|--  Timeout loading https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:36:00,988 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 14:36:07,829 --|-- HerbalBAPS --|-- INFO --|--  Collected 13 unique product URLs so far.
+2025-05-20 14:36:07,860 --|-- HerbalBAPS --|-- INFO --|--  Clicking Next button...
+2025-05-20 14:36:16,205 --|-- HerbalBAPS --|-- INFO --|--  Collected 27 unique product URLs so far.
+2025-05-20 14:36:16,232 --|-- HerbalBAPS --|-- INFO --|--  Clicking Next button...
+2025-05-20 14:36:25,498 --|-- HerbalBAPS --|-- INFO --|--  Collected 36 unique product URLs so far.
+2025-05-20 14:36:25,514 --|-- HerbalBAPS --|-- INFO --|--  No Next button found. Reached last page.
+2025-05-20 14:36:25,514 --|-- HerbalBAPS --|-- INFO --|--  Total product URLs collected: 36
+2025-05-20 14:36:25,514 --|-- HerbalBAPS --|-- INFO --|--  Found 36 product URLs to scrape
+2025-05-20 19:14:01,542 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 19:14:01,542 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 19:14:16,166 --|-- HerbalBAPS --|-- INFO --|--  
+Scraping stopped by user
+2025-05-20 19:14:26,337 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 19:14:26,337 --|-- HerbalBAPS --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-20 19:14:26,342 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-20 19:14:46,357 --|-- HerbalBAPS --|-- WARNING --|--  Timeout loading https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-20 19:14:51,361 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-20 19:15:11,951 --|-- HerbalBAPS --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-20 19:20:21,937 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-20 19:20:21,937 --|-- HerbalBAPS --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-20 19:20:21,942 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-20 19:20:41,969 --|-- HerbalBAPS --|-- WARNING --|--  Timeout loading https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-20 19:20:46,973 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-20 19:21:10,581 --|-- HerbalBAPS --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-21 11:00:52,674 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:00:52,675 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:02:08,859 --|-- HerbalBAPS --|-- INFO --|--  Collected 13 unique product URLs so far.
+2025-05-21 11:02:08,887 --|-- HerbalBAPS --|-- INFO --|--  Clicking Next button...
+2025-05-21 11:02:18,485 --|-- HerbalBAPS --|-- INFO --|--  Collected 27 unique product URLs so far.
+2025-05-21 11:02:18,514 --|-- HerbalBAPS --|-- INFO --|--  Clicking Next button...
+2025-05-21 11:02:27,282 --|-- HerbalBAPS --|-- INFO --|--  Collected 36 unique product URLs so far.
+2025-05-21 11:02:27,299 --|-- HerbalBAPS --|-- INFO --|--  No Next button found. Reached last page.
+2025-05-21 11:02:27,299 --|-- HerbalBAPS --|-- INFO --|--  Total product URLs collected: 36
+2025-05-21 11:02:27,300 --|-- HerbalBAPS --|-- INFO --|--  Found 36 product URLs to scrape
+2025-05-21 11:02:27,304 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/falahari-flour-500g.html
+2025-05-21 11:02:44,118 --|-- HerbalBAPS --|-- INFO --|--  Inserted product with ID: 4332
+2025-05-21 11:02:46,121 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/falahari-flour-500g.html#reviews
+2025-05-21 11:02:58,373 --|-- HerbalBAPS --|-- INFO --|--  Inserted product with ID: 4333
+2025-05-21 11:03:03,378 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/pani-puri-masala.html
+2025-05-21 11:03:11,013 --|-- HerbalBAPS --|-- INFO --|--  
+Scraping stopped by user
+2025-05-21 11:20:50,049 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:20:50,049 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:20:56,000 --|-- HerbalBAPS --|-- INFO --|--  
+Scraping stopped by user
+2025-05-21 11:21:12,758 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:21:12,758 --|-- HerbalBAPS --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-21 11:21:12,762 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:21:32,779 --|-- HerbalBAPS --|-- WARNING --|--  Timeout loading https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:21:37,787 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:21:56,050 --|-- HerbalBAPS --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-21 11:25:03,970 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:25:03,970 --|-- HerbalBAPS --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-21 11:25:03,974 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:25:27,785 --|-- HerbalBAPS --|-- ERROR --|--  Attempt 1 failed for https://herbal.baps.org/rajwadi-milk-masala.html: 'NoneType' object has no attribute 'get_text'
+2025-05-21 11:25:32,788 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:25:43,388 --|-- HerbalBAPS --|-- ERROR --|--  Error extracting images from JS: 'NoneType' object has no attribute 'find_all'
+2025-05-21 11:25:43,389 --|-- HerbalBAPS --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-21 11:27:48,546 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:27:48,546 --|-- HerbalBAPS --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-21 11:27:48,549 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:28:14,889 --|-- HerbalBAPS --|-- ERROR --|--  Attempt 1 failed for https://herbal.baps.org/rajwadi-milk-masala.html: 'NoneType' object has no attribute 'get_text'
+2025-05-21 11:28:19,894 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:28:31,467 --|-- HerbalBAPS --|-- ERROR --|--  Error extracting images from JS: 'NoneType' object has no attribute 'find_all'
+2025-05-21 11:28:31,468 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 1/https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:28:35,473 --|-- HerbalBAPS --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-21 11:31:10,510 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:31:10,510 --|-- HerbalBAPS --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-21 11:31:10,514 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:31:37,893 --|-- HerbalBAPS --|-- ERROR --|--  Attempt 1 failed for https://herbal.baps.org/rajwadi-milk-masala.html: 'NoneType' object has no attribute 'get_text'
+2025-05-21 11:31:42,897 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:31:54,502 --|-- HerbalBAPS --|-- ERROR --|--  Error extracting images: 'NoneType' object has no attribute 'find_all'
+2025-05-21 11:31:54,502 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 1/https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:31:58,507 --|-- HerbalBAPS --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-21 11:52:32,086 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-21 11:52:32,087 --|-- HerbalBAPS --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-21 11:52:32,090 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:52:53,720 --|-- HerbalBAPS --|-- ERROR --|--  Attempt 1 failed for https://herbal.baps.org/rajwadi-milk-masala.html: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x5f61f2a2575a <unknown>
+#1 0x5f61f24c80a0 <unknown>
+#2 0x5f61f249d310 <unknown>
+#3 0x5f61f2547ae8 <unknown>
+#4 0x5f61f2564c3c <unknown>
+#5 0x5f61f253f173 <unknown>
+#6 0x5f61f250bd4b <unknown>
+#7 0x5f61f250c9b1 <unknown>
+#8 0x5f61f29ea90b <unknown>
+#9 0x5f61f29ee80a <unknown>
+#10 0x5f61f29d2662 <unknown>
+#11 0x5f61f29ef394 <unknown>
+#12 0x5f61f29b749f <unknown>
+#13 0x5f61f2a13538 <unknown>
+#14 0x5f61f2a13716 <unknown>
+#15 0x5f61f2a245c6 <unknown>
+#16 0x700688294ac3 <unknown>
+
+2025-05-21 11:52:58,725 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:52:58,740 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 1 failed for https://herbal.baps.org/rajwadi-milk-masala.html: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x5f61f2a2575a <unknown>
+#1 0x5f61f24c80a0 <unknown>
+#2 0x5f61f249d310 <unknown>
+#3 0x5f61f2547ae8 <unknown>
+#4 0x5f61f2564c3c <unknown>
+#5 0x5f61f253f173 <unknown>
+#6 0x5f61f250bd4b <unknown>
+#7 0x5f61f250c9b1 <unknown>
+#8 0x5f61f29ea90b <unknown>
+#9 0x5f61f29ee80a <unknown>
+#10 0x5f61f29d2662 <unknown>
+#11 0x5f61f29ef394 <unknown>
+#12 0x5f61f29b749f <unknown>
+#13 0x5f61f2a13538 <unknown>
+#14 0x5f61f2a13716 <unknown>
+#15 0x5f61f2a245c6 <unknown>
+#16 0x700688294ac3 <unknown>
+
+2025-05-21 11:53:03,741 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:53:03,760 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 2 failed for https://herbal.baps.org/rajwadi-milk-masala.html: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x5f61f2a2575a <unknown>
+#1 0x5f61f24c80a0 <unknown>
+#2 0x5f61f249d310 <unknown>
+#3 0x5f61f2547ae8 <unknown>
+#4 0x5f61f2564c3c <unknown>
+#5 0x5f61f253f173 <unknown>
+#6 0x5f61f250bd4b <unknown>
+#7 0x5f61f250c9b1 <unknown>
+#8 0x5f61f29ea90b <unknown>
+#9 0x5f61f29ee80a <unknown>
+#10 0x5f61f29d2662 <unknown>
+#11 0x5f61f29ef394 <unknown>
+#12 0x5f61f29b749f <unknown>
+#13 0x5f61f2a13538 <unknown>
+#14 0x5f61f2a13716 <unknown>
+#15 0x5f61f2a245c6 <unknown>
+#16 0x700688294ac3 <unknown>
+
+2025-05-21 11:53:13,766 --|-- HerbalBAPS --|-- INFO --|--  Attempt 3 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:53:13,784 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 3 failed for https://herbal.baps.org/rajwadi-milk-masala.html: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x5f61f2a2575a <unknown>
+#1 0x5f61f24c80a0 <unknown>
+#2 0x5f61f249d310 <unknown>
+#3 0x5f61f2547ae8 <unknown>
+#4 0x5f61f2564c3c <unknown>
+#5 0x5f61f253f173 <unknown>
+#6 0x5f61f250bd4b <unknown>
+#7 0x5f61f250c9b1 <unknown>
+#8 0x5f61f29ea90b <unknown>
+#9 0x5f61f29ee80a <unknown>
+#10 0x5f61f29d2662 <unknown>
+#11 0x5f61f29ef394 <unknown>
+#12 0x5f61f29b749f <unknown>
+#13 0x5f61f2a13538 <unknown>
+#14 0x5f61f2a13716 <unknown>
+#15 0x5f61f2a245c6 <unknown>
+#16 0x700688294ac3 <unknown>
+
+2025-05-21 11:53:13,784 --|-- HerbalBAPS --|-- ERROR --|--  Failed to load https://herbal.baps.org/rajwadi-milk-masala.html after 3 attempts
+2025-05-21 11:53:13,784 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:53:13,801 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 1 failed for https://herbal.baps.org/rajwadi-milk-masala.html: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x5f61f2a2575a <unknown>
+#1 0x5f61f24c80a0 <unknown>
+#2 0x5f61f249d310 <unknown>
+#3 0x5f61f2547ae8 <unknown>
+#4 0x5f61f2564c3c <unknown>
+#5 0x5f61f253f173 <unknown>
+#6 0x5f61f250bd4b <unknown>
+#7 0x5f61f250c9b1 <unknown>
+#8 0x5f61f29ea90b <unknown>
+#9 0x5f61f29ee80a <unknown>
+#10 0x5f61f29d2662 <unknown>
+#11 0x5f61f29ef394 <unknown>
+#12 0x5f61f29b749f <unknown>
+#13 0x5f61f2a13538 <unknown>
+#14 0x5f61f2a13716 <unknown>
+#15 0x5f61f2a245c6 <unknown>
+#16 0x700688294ac3 <unknown>
+
+2025-05-21 11:53:18,806 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:53:18,815 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 2 failed for https://herbal.baps.org/rajwadi-milk-masala.html: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x5f61f2a2575a <unknown>
+#1 0x5f61f24c80a0 <unknown>
+#2 0x5f61f249d310 <unknown>
+#3 0x5f61f2547ae8 <unknown>
+#4 0x5f61f2564c3c <unknown>
+#5 0x5f61f253f173 <unknown>
+#6 0x5f61f250bd4b <unknown>
+#7 0x5f61f250c9b1 <unknown>
+#8 0x5f61f29ea90b <unknown>
+#9 0x5f61f29ee80a <unknown>
+#10 0x5f61f29d2662 <unknown>
+#11 0x5f61f29ef394 <unknown>
+#12 0x5f61f29b749f <unknown>
+#13 0x5f61f2a13538 <unknown>
+#14 0x5f61f2a13716 <unknown>
+#15 0x5f61f2a245c6 <unknown>
+#16 0x700688294ac3 <unknown>
+
+2025-05-21 11:53:28,818 --|-- HerbalBAPS --|-- INFO --|--  Attempt 3 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:53:28,835 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 3 failed for https://herbal.baps.org/rajwadi-milk-masala.html: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x5f61f2a2575a <unknown>
+#1 0x5f61f24c80a0 <unknown>
+#2 0x5f61f249d310 <unknown>
+#3 0x5f61f2547ae8 <unknown>
+#4 0x5f61f2564c3c <unknown>
+#5 0x5f61f253f173 <unknown>
+#6 0x5f61f250bd4b <unknown>
+#7 0x5f61f250c9b1 <unknown>
+#8 0x5f61f29ea90b <unknown>
+#9 0x5f61f29ee80a <unknown>
+#10 0x5f61f29d2662 <unknown>
+#11 0x5f61f29ef394 <unknown>
+#12 0x5f61f29b749f <unknown>
+#13 0x5f61f2a13538 <unknown>
+#14 0x5f61f2a13716 <unknown>
+#15 0x5f61f2a245c6 <unknown>
+#16 0x700688294ac3 <unknown>
+
+2025-05-21 11:53:28,836 --|-- HerbalBAPS --|-- ERROR --|--  Failed to load https://herbal.baps.org/rajwadi-milk-masala.html after 3 attempts
+2025-05-21 11:53:28,836 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 1/https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-21 11:53:31,839 --|-- HerbalBAPS --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-22 10:17:24,087 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-22 10:17:24,088 --|-- HerbalBAPS --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-22 10:17:24,095 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/rajwadi-milk-masala.html
+2025-05-22 10:17:31,371 --|-- HerbalBAPS --|-- INFO --|--  
+Scraping stopped by user
+2025-05-22 10:17:51,095 --|-- HerbalBAPS --|-- INFO --|--  Starting scraping for URL: https://herbal.baps.org/spices-and-condiments.html
+2025-05-22 10:17:51,095 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-22 10:18:11,118 --|-- HerbalBAPS --|-- WARNING --|--  Timeout loading https://herbal.baps.org/spices-and-condiments.html
+2025-05-22 10:18:16,126 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load https://herbal.baps.org/spices-and-condiments.html
+2025-05-22 10:19:22,829 --|-- HerbalBAPS --|-- INFO --|--  Collected 13 unique product URLs so far.
+2025-05-22 10:19:22,869 --|-- HerbalBAPS --|-- INFO --|--  Clicking Next button...
+2025-05-22 10:19:29,794 --|-- HerbalBAPS --|-- ERROR --|--  Error while extracting product URLs: 'NoneType' object has no attribute 'find_all'
+2025-05-22 10:19:29,794 --|-- HerbalBAPS --|-- INFO --|--  Total product URLs collected: 13
+2025-05-22 10:19:29,794 --|-- HerbalBAPS --|-- INFO --|--  Found 13 product URLs to scrape
+2025-05-22 10:19:29,803 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/dabeli-masala.html
+2025-05-22 10:19:42,774 --|-- HerbalBAPS --|-- ERROR --|--  Error extracting images: 'NoneType' object has no attribute 'find_all'
+2025-05-22 10:19:42,774 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 1/https://herbal.baps.org/dabeli-masala.html
+2025-05-22 10:19:44,777 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/tea-masala.html
+2025-05-22 10:19:56,625 --|-- HerbalBAPS --|-- ERROR --|--  Error extracting images: 'NoneType' object has no attribute 'find_all'
+2025-05-22 10:19:56,625 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 2/https://herbal.baps.org/tea-masala.html
+2025-05-22 10:19:58,628 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/ginger-powder-dry.html
+2025-05-22 10:20:11,511 --|-- HerbalBAPS --|-- ERROR --|--  Error extracting images: 'NoneType' object has no attribute 'find_all'
+2025-05-22 10:20:11,512 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 3/https://herbal.baps.org/ginger-powder-dry.html
+2025-05-22 10:20:14,516 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/turmeric-powder.html
+2025-05-22 10:20:26,635 --|-- HerbalBAPS --|-- ERROR --|--  Error extracting images: 'NoneType' object has no attribute 'find_all'
+2025-05-22 10:20:26,635 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 4/https://herbal.baps.org/turmeric-powder.html
+2025-05-22 10:20:29,639 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load #
+2025-05-22 10:20:29,671 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 1 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:20:34,676 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load #
+2025-05-22 10:20:34,708 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 2 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:20:44,716 --|-- HerbalBAPS --|-- INFO --|--  Attempt 3 to load #
+2025-05-22 10:20:44,749 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 3 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:20:44,749 --|-- HerbalBAPS --|-- ERROR --|--  Failed to load # after 3 attempts
+2025-05-22 10:20:44,749 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load #
+2025-05-22 10:20:44,780 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 1 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:20:49,785 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load #
+2025-05-22 10:20:49,818 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 2 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:20:59,828 --|-- HerbalBAPS --|-- INFO --|--  Attempt 3 to load #
+2025-05-22 10:20:59,860 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 3 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:20:59,861 --|-- HerbalBAPS --|-- ERROR --|--  Failed to load # after 3 attempts
+2025-05-22 10:20:59,861 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load #
+2025-05-22 10:20:59,892 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 1 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:21:04,893 --|-- HerbalBAPS --|-- INFO --|--  Attempt 2 to load #
+2025-05-22 10:21:04,925 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 2 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:21:14,935 --|-- HerbalBAPS --|-- INFO --|--  Attempt 3 to load #
+2025-05-22 10:21:14,951 --|-- HerbalBAPS --|-- WARNING --|--  Attempt 3 failed for #: Message: invalid argument
+  (Session info: chrome=136.0.7103.113)
+Stacktrace:
+#0 0x63c908e9671a <unknown>
+#1 0x63c908938ef3 <unknown>
+#2 0x63c908920590 <unknown>
+#3 0x63c90891ebba <unknown>
+#4 0x63c90891f1aa <unknown>
+#5 0x63c90893c5d9 <unknown>
+#6 0x63c9089d6eb5 <unknown>
+#7 0x63c9089b03a2 <unknown>
+#8 0x63c9089d62a0 <unknown>
+#9 0x63c9089b0173 <unknown>
+#10 0x63c90897cd4b <unknown>
+#11 0x63c90897d9b1 <unknown>
+#12 0x63c908e5b8cb <unknown>
+#13 0x63c908e5f7ca <unknown>
+#14 0x63c908e43622 <unknown>
+#15 0x63c908e60354 <unknown>
+#16 0x63c908e2845f <unknown>
+#17 0x63c908e844f8 <unknown>
+#18 0x63c908e846d6 <unknown>
+#19 0x63c908e95586 <unknown>
+#20 0x7535cac94ac3 <unknown>
+
+2025-05-22 10:21:14,951 --|-- HerbalBAPS --|-- ERROR --|--  Failed to load # after 3 attempts
+2025-05-22 10:21:14,951 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 5/#
+2025-05-22 10:21:19,957 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/coriander-cumin-powder.html
+2025-05-22 10:21:37,112 --|-- HerbalBAPS --|-- ERROR --|--  Attempt 1 failed for https://herbal.baps.org/coriander-cumin-powder.html: 'NoneType' object has no attribute 'get_text'
+2025-05-22 10:21:42,117 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/coriander-cumin-powder.html
+2025-05-22 10:21:56,339 --|-- HerbalBAPS --|-- ERROR --|--  Attempt 2 failed for https://herbal.baps.org/coriander-cumin-powder.html: 'NoneType' object has no attribute 'get_text'
+2025-05-22 10:22:06,349 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/coriander-cumin-powder.html
+2025-05-22 10:22:20,360 --|-- HerbalBAPS --|-- ERROR --|--  Attempt 3 failed for https://herbal.baps.org/coriander-cumin-powder.html: 'NoneType' object has no attribute 'get_text'
+2025-05-22 10:22:20,360 --|-- HerbalBAPS --|-- ERROR --|--  Failed to scrape product 6/https://herbal.baps.org/coriander-cumin-powder.html
+2025-05-22 10:22:25,365 --|-- HerbalBAPS --|-- INFO --|--  Attempt 1 to load https://herbal.baps.org/undhiya-masala.html
+2025-05-22 10:22:39,620 --|-- HerbalBAPS --|-- INFO --|--  Completed scraping. Results saved in DATABASE

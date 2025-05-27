@@ -1,0 +1,187 @@
+2025-05-23 18:56:40,841 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 18:56:40,841 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 18:57:03,205 --|-- FLIPKART --|-- ERROR --|--  Error during scrolling: Message: 
+Stacktrace:
+#0 0x5995f759571a <unknown>
+#1 0x5995f70380a0 <unknown>
+#2 0x5995f70899b0 <unknown>
+#3 0x5995f7089ba1 <unknown>
+#4 0x5995f70d7ea4 <unknown>
+#5 0x5995f70af3cd <unknown>
+#6 0x5995f70d52a0 <unknown>
+#7 0x5995f70af173 <unknown>
+#8 0x5995f707bd4b <unknown>
+#9 0x5995f707c9b1 <unknown>
+#10 0x5995f755a8cb <unknown>
+#11 0x5995f755e7ca <unknown>
+#12 0x5995f7542622 <unknown>
+#13 0x5995f755f354 <unknown>
+#14 0x5995f752745f <unknown>
+#15 0x5995f75834f8 <unknown>
+#16 0x5995f75836d6 <unknown>
+#17 0x5995f7594586 <unknown>
+#18 0x7bb012294ac3 <unknown>
+
+2025-05-23 18:57:03,376 --|-- FLIPKART --|-- INFO --|--  Collected 0 unique product URLs so far.
+2025-05-23 18:57:03,426 --|-- FLIPKART --|-- ERROR --|--  No Next button found. Exiting.
+2025-05-23 18:57:03,426 --|-- FLIPKART --|-- INFO --|--  Total product URLs collected: 0
+2025-05-23 18:57:03,426 --|-- FLIPKART --|-- ERROR --|--  No product URLs found
+2025-05-23 18:58:22,765 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 18:58:22,765 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 18:58:46,383 --|-- FLIPKART --|-- ERROR --|--  Error during scrolling: Message: 
+Stacktrace:
+#0 0x585bb3b9971a <unknown>
+#1 0x585bb363c0a0 <unknown>
+#2 0x585bb368d9b0 <unknown>
+#3 0x585bb368dba1 <unknown>
+#4 0x585bb36dbea4 <unknown>
+#5 0x585bb36b33cd <unknown>
+#6 0x585bb36d92a0 <unknown>
+#7 0x585bb36b3173 <unknown>
+#8 0x585bb367fd4b <unknown>
+#9 0x585bb36809b1 <unknown>
+#10 0x585bb3b5e8cb <unknown>
+#11 0x585bb3b627ca <unknown>
+#12 0x585bb3b46622 <unknown>
+#13 0x585bb3b63354 <unknown>
+#14 0x585bb3b2b45f <unknown>
+#15 0x585bb3b874f8 <unknown>
+#16 0x585bb3b876d6 <unknown>
+#17 0x585bb3b98586 <unknown>
+#18 0x7f0f48e94ac3 <unknown>
+
+2025-05-23 18:58:46,586 --|-- FLIPKART --|-- INFO --|--  Collected 0 unique product URLs so far.
+2025-05-23 18:58:46,644 --|-- FLIPKART --|-- ERROR --|--  No Next button found. Exiting.
+2025-05-23 18:58:46,644 --|-- FLIPKART --|-- INFO --|--  Total product URLs collected: 0
+2025-05-23 18:58:46,645 --|-- FLIPKART --|-- ERROR --|--  No product URLs found
+2025-05-23 19:03:58,213 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:03:58,214 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:04:22,393 --|-- FLIPKART --|-- ERROR --|--  Error during scrolling: Message: 
+Stacktrace:
+#0 0x62170619f71a <unknown>
+#1 0x621705c420a0 <unknown>
+#2 0x621705c939b0 <unknown>
+#3 0x621705c93ba1 <unknown>
+#4 0x621705ce1ea4 <unknown>
+#5 0x621705cb93cd <unknown>
+#6 0x621705cdf2a0 <unknown>
+#7 0x621705cb9173 <unknown>
+#8 0x621705c85d4b <unknown>
+#9 0x621705c869b1 <unknown>
+#10 0x6217061648cb <unknown>
+#11 0x6217061687ca <unknown>
+#12 0x62170614c622 <unknown>
+#13 0x621706169354 <unknown>
+#14 0x62170613145f <unknown>
+#15 0x62170618d4f8 <unknown>
+#16 0x62170618d6d6 <unknown>
+#17 0x62170619e586 <unknown>
+#18 0x7fb177a94ac3 <unknown>
+
+2025-05-23 19:04:22,588 --|-- FLIPKART --|-- INFO --|--  Collected 11 unique product URLs so far.
+2025-05-23 19:04:22,657 --|-- FLIPKART --|-- ERROR --|--  No Next button found. Exiting.
+2025-05-23 19:04:22,657 --|-- FLIPKART --|-- INFO --|--  Total product URLs collected: 11
+2025-05-23 19:04:22,657 --|-- FLIPKART --|-- INFO --|--  Found 11 product URLs to scrape
+2025-05-23 19:04:50,161 --|-- FLIPKART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-23 19:04:51,704 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:04:51,704 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:05:11,354 --|-- FLIPKART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-23 19:05:28,666 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:05:28,666 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:05:51,872 --|-- FLIPKART --|-- ERROR --|--  Error during scrolling: Message: 
+Stacktrace:
+#0 0x5875bf08271a <unknown>
+#1 0x5875beb250a0 <unknown>
+#2 0x5875beb769b0 <unknown>
+#3 0x5875beb76ba1 <unknown>
+#4 0x5875bebc4ea4 <unknown>
+#5 0x5875beb9c3cd <unknown>
+#6 0x5875bebc22a0 <unknown>
+#7 0x5875beb9c173 <unknown>
+#8 0x5875beb68d4b <unknown>
+#9 0x5875beb699b1 <unknown>
+#10 0x5875bf0478cb <unknown>
+#11 0x5875bf04b7ca <unknown>
+#12 0x5875bf02f622 <unknown>
+#13 0x5875bf04c354 <unknown>
+#14 0x5875bf01445f <unknown>
+#15 0x5875bf0704f8 <unknown>
+#16 0x5875bf0706d6 <unknown>
+#17 0x5875bf081586 <unknown>
+#18 0x7c513ec94ac3 <unknown>
+
+2025-05-23 19:05:52,052 --|-- FLIPKART --|-- INFO --|--  Collected 11 unique product URLs so far.
+2025-05-23 19:05:52,111 --|-- FLIPKART --|-- ERROR --|--  No Next button found. Exiting.
+2025-05-23 19:05:52,111 --|-- FLIPKART --|-- INFO --|--  Total product URLs collected: 11
+2025-05-23 19:05:52,112 --|-- FLIPKART --|-- INFO --|--  Found 11 product URLs to scrape
+2025-05-23 19:06:03,913 --|-- FLIPKART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-23 19:06:23,830 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:06:23,830 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:06:47,409 --|-- FLIPKART --|-- ERROR --|--  Error during scrolling: Message: 
+Stacktrace:
+#0 0x5c419200271a <unknown>
+#1 0x5c4191aa50a0 <unknown>
+#2 0x5c4191af69b0 <unknown>
+#3 0x5c4191af6ba1 <unknown>
+#4 0x5c4191b44ea4 <unknown>
+#5 0x5c4191b1c3cd <unknown>
+#6 0x5c4191b422a0 <unknown>
+#7 0x5c4191b1c173 <unknown>
+#8 0x5c4191ae8d4b <unknown>
+#9 0x5c4191ae99b1 <unknown>
+#10 0x5c4191fc78cb <unknown>
+#11 0x5c4191fcb7ca <unknown>
+#12 0x5c4191faf622 <unknown>
+#13 0x5c4191fcc354 <unknown>
+#14 0x5c4191f9445f <unknown>
+#15 0x5c4191ff04f8 <unknown>
+#16 0x5c4191ff06d6 <unknown>
+#17 0x5c4192001586 <unknown>
+#18 0x78e47ea94ac3 <unknown>
+
+2025-05-23 19:06:47,601 --|-- FLIPKART --|-- INFO --|--  Collected 11 unique product URLs so far.
+2025-05-23 19:06:47,652 --|-- FLIPKART --|-- ERROR --|--  No Next button found. Exiting.
+2025-05-23 19:06:47,652 --|-- FLIPKART --|-- INFO --|--  Total product URLs collected: 11
+2025-05-23 19:06:47,653 --|-- FLIPKART --|-- INFO --|--  Found 11 product URLs to scrape
+2025-05-23 19:07:28,701 --|-- FLIPKART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-23 19:12:25,342 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:12:25,342 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:12:31,872 --|-- FLIPKART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-23 19:12:38,078 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:12:38,078 --|-- FLIPKART --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-23 19:12:38,083 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/indie-flavors-flipkart-khatta-meetha/p/itmec0440ae12fa1?pid=SNSHFS4BHXSBK2G7&lid=LSTSNSHFS4BHXSBK2G7FX1L0C&marketplace=FLIPKART&store=eat%2F0we&srno=b_1_1&otracker=product_breadCrumbs_Indie%20Flavors%20by%20Flipkart%20Namkeen&fm=organic&iid=891f3172-d51b-4fba-afd2-7c795e5aff53.SNSHFS4BHXSBK2G7.SEARCH&ppt=browse&ppn=browse&ssid=82m32i63740000001748006109202
+2025-05-23 19:12:54,310 --|-- FLIPKART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-23 19:13:06,950 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:13:06,951 --|-- FLIPKART --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-23 19:13:06,956 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/indie-flavors-flipkart-khatta-meetha/p/itmec0440ae12fa1?pid=SNSHFS4BHXSBK2G7&lid=LSTSNSHFS4BHXSBK2G7FX1L0C&marketplace=FLIPKART&store=eat%2F0we&srno=b_1_1&otracker=product_breadCrumbs_Indie%20Flavors%20by%20Flipkart%20Namkeen&fm=organic&iid=891f3172-d51b-4fba-afd2-7c795e5aff53.SNSHFS4BHXSBK2G7.SEARCH&ppt=browse&ppn=browse&ssid=82m32i63740000001748006109202
+2025-05-23 19:13:28,076 --|-- FLIPKART --|-- ERROR --|--  Error extracting images from JS: 'NoneType' object has no attribute 'find_all'
+2025-05-23 19:13:31,155 --|-- FLIPKART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-23 19:13:36,935 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:13:36,936 --|-- FLIPKART --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-23 19:13:36,939 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/indie-flavors-flipkart-khatta-meetha/p/itmec0440ae12fa1?pid=SNSHFS4BHXSBK2G7&lid=LSTSNSHFS4BHXSBK2G7FX1L0C&marketplace=FLIPKART&store=eat%2F0we&srno=b_1_1&otracker=product_breadCrumbs_Indie%20Flavors%20by%20Flipkart%20Namkeen&fm=organic&iid=891f3172-d51b-4fba-afd2-7c795e5aff53.SNSHFS4BHXSBK2G7.SEARCH&ppt=browse&ppn=browse&ssid=82m32i63740000001748006109202
+2025-05-23 19:13:53,155 --|-- FLIPKART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-23 19:27:35,033 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-23 19:27:35,033 --|-- FLIPKART --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-23 19:27:35,037 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/indie-flavors-flipkart-khatta-meetha/p/itmec0440ae12fa1?pid=SNSHFS4BHXSBK2G7&lid=LSTSNSHFS4BHXSBK2G7FX1L0C&marketplace=FLIPKART&store=eat%2F0we&srno=b_1_1&otracker=product_breadCrumbs_Indie%20Flavors%20by%20Flipkart%20Namkeen&fm=organic&iid=891f3172-d51b-4fba-afd2-7c795e5aff53.SNSHFS4BHXSBK2G7.SEARCH&ppt=browse&ppn=browse&ssid=82m32i63740000001748006109202
+2025-05-23 19:27:52,531 --|-- FLIPKART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-27 10:27:28,233 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-27 10:27:28,242 --|-- FLIPKART --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-27 10:27:28,253 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/indie-flavors-flipkart-khatta-meetha/p/itmec0440ae12fa1?pid=SNSHFS4BHXSBK2G7&lid=LSTSNSHFS4BHXSBK2G7FX1L0C&marketplace=FLIPKART&store=eat%2F0we&srno=b_1_1&otracker=product_breadCrumbs_Indie%20Flavors%20by%20Flipkart%20Namkeen&fm=organic&iid=891f3172-d51b-4fba-afd2-7c795e5aff53.SNSHFS4BHXSBK2G7.SEARCH&ppt=browse&ppn=browse&ssid=82m32i63740000001748006109202
+2025-05-27 10:27:44,232 --|-- FLIPKART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-27 10:43:45,420 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-27 10:43:45,420 --|-- FLIPKART --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-27 10:43:45,424 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/indie-flavors-flipkart-khatta-meetha/p/itmec0440ae12fa1?pid=SNSHFS4BHXSBK2G7&lid=LSTSNSHFS4BHXSBK2G7FX1L0C&marketplace=FLIPKART&store=eat%2F0we&srno=b_1_1&otracker=product_breadCrumbs_Indie%20Flavors%20by%20Flipkart%20Namkeen&fm=organic&iid=891f3172-d51b-4fba-afd2-7c795e5aff53.SNSHFS4BHXSBK2G7.SEARCH&ppt=browse&ppn=browse&ssid=82m32i63740000001748006109202
+2025-05-27 10:43:54,310 --|-- FLIPKART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-27 10:43:56,653 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-27 10:43:56,653 --|-- FLIPKART --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-27 10:43:56,657 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/indie-flavors-flipkart-khatta-meetha/p/itmec0440ae12fa1?pid=SNSHFS4BHXSBK2G7&lid=LSTSNSHFS4BHXSBK2G7FX1L0C&marketplace=FLIPKART&store=eat%2F0we&srno=b_1_1&otracker=product_breadCrumbs_Indie%20Flavors%20by%20Flipkart%20Namkeen&fm=organic&iid=891f3172-d51b-4fba-afd2-7c795e5aff53.SNSHFS4BHXSBK2G7.SEARCH&ppt=browse&ppn=browse&ssid=82m32i63740000001748006109202
+2025-05-27 10:44:15,923 --|-- FLIPKART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-27 10:48:17,000 --|-- FLIPKART --|-- INFO --|--  Starting scraping for URL: https://www.flipkart.com/food-products/namkeen/indie-flavors-by-flipkart~brand/pr?sid=eat,0we&marketplace=FLIPKART&otracker=product_breadCrumbs_Indie+Flavors+by+Flipkart+Namkeen
+2025-05-27 10:48:17,000 --|-- FLIPKART --|-- INFO --|--  Found 1 product URLs to scrape
+2025-05-27 10:48:17,003 --|-- FLIPKART --|-- INFO --|--  Attempt 1 to load https://www.flipkart.com/indie-flavors-flipkart-khatta-meetha/p/itmec0440ae12fa1?pid=SNSHFS4BHXSBK2G7&lid=LSTSNSHFS4BHXSBK2G7FX1L0C&marketplace=FLIPKART&store=eat%2F0we&srno=b_1_1&otracker=product_breadCrumbs_Indie%20Flavors%20by%20Flipkart%20Namkeen&fm=organic&iid=891f3172-d51b-4fba-afd2-7c795e5aff53.SNSHFS4BHXSBK2G7.SEARCH&ppt=browse&ppn=browse&ssid=82m32i63740000001748006109202
+2025-05-27 10:48:33,043 --|-- FLIPKART --|-- INFO --|--  Completed scraping. Results saved in DATABASE

@@ -1,0 +1,754 @@
+2025-04-24 19:04:52,192 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/amul-slim-n-trim-skimmed-long-life-milk-1-l-tetra-pak/490001542
+2025-04-24 19:05:02,708 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/amul-slim-n-trim-skimmed-long-life-milk-1-l-tetra-pak/490001542
+2025-04-24 19:19:43,350 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/amul-dark-chocolate-bar-150-g/490936920
+2025-04-24 19:19:43,617 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/amul-dark-chocolate-bar-150-g/490936920
+2025-04-24 19:19:56,250 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/amul-dark-chocolate-bar-150-g/490936920
+2025-04-24 19:22:41,286 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/kellogg-s-chocos-1-2-kg/491168004
+2025-04-24 19:22:41,549 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/kellogg-s-chocos-1-2-kg/491168004
+2025-04-24 19:22:57,119 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/kellogg-s-chocos-1-2-kg/491168004
+2025-04-24 19:32:14,814 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520&ved=2ahUKEwjJq5LP6vCMAxWmc_UHHR2rAL8QFnoECAoQAg&usg=AOvVaw2xFSw60NG-rhm3JmI91DAz
+2025-04-24 19:32:15,098 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520&ved=2ahUKEwjJq5LP6vCMAxWmc_UHHR2rAL8QFnoECAoQAg&usg=AOvVaw2xFSw60NG-rhm3JmI91DAz
+2025-04-24 19:32:35,145 --|-- JIOMART --|-- WARNING --|--  Timeout loading https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520&ved=2ahUKEwjJq5LP6vCMAxWmc_UHHR2rAL8QFnoECAoQAg&usg=AOvVaw2xFSw60NG-rhm3JmI91DAz
+2025-04-24 19:32:38,146 --|-- JIOMART --|-- INFO --|--  Attempt 2 to load https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520&ved=2ahUKEwjJq5LP6vCMAxWmc_UHHR2rAL8QFnoECAoQAg&usg=AOvVaw2xFSw60NG-rhm3JmI91DAz
+2025-04-24 19:32:47,992 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520&ved=2ahUKEwjJq5LP6vCMAxWmc_UHHR2rAL8QFnoECAoQAg&usg=AOvVaw2xFSw60NG-rhm3JmI91DAz
+2025-04-24 19:53:22,903 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520
+2025-04-24 19:53:23,709 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520
+2025-04-24 19:53:36,113 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520
+2025-04-24 20:13:08,761 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520
+2025-04-24 20:13:09,006 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520
+2025-04-24 20:13:19,209 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/amul-pure-ghee-500-ml-pouch/490001520
+2025-04-25 16:36:43,550 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-25 17:17:17,867 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-25 17:21:16,034 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-28 17:20:42,659 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-28 17:37:56,570 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-28 17:42:28,446 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-28 17:43:29,181 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-28 17:58:55,661 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 17:58:55,969 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 17:59:06,457 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 18:00:27,156 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-28 18:01:20,554 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 18:01:20,843 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 18:01:32,178 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 18:02:03,482 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/appy-160-ml-pack-of-10/491469280
+2025-04-28 18:02:03,803 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/appy-160-ml-pack-of-10/491469280
+2025-04-28 18:02:12,413 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/appy-160-ml-pack-of-10/491469280
+2025-04-28 18:03:29,324 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/maaza-refresh-150-ml-pack-of-10/590114753
+2025-04-28 18:03:29,576 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maaza-refresh-150-ml-pack-of-10/590114753
+2025-04-28 18:03:37,915 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/maaza-refresh-150-ml-pack-of-10/590114753
+2025-04-28 18:04:41,238 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 18:04:42,048 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 18:04:51,862 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/appy-fizz-250-ml/590110143
+2025-04-28 18:06:14,407 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-28 18:08:15,867 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/kinley-soda-750-ml/491071103
+2025-04-28 18:08:16,159 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/kinley-soda-750-ml/491071103
+2025-04-28 18:08:27,104 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/kinley-soda-750-ml/491071103
+2025-04-28 18:53:55,857 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/sepoy-co-mixed-berry-lemonade-pack-of-6-x-200-ml-aerated-cosmopolitan-mixer/598497426
+2025-04-28 18:53:56,119 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/sepoy-co-mixed-berry-lemonade-pack-of-6-x-200-ml-aerated-cosmopolitan-mixer/598497426
+2025-04-28 18:54:02,177 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/sepoy-co-mixed-berry-lemonade-pack-of-6-x-200-ml-aerated-cosmopolitan-mixer/598497426
+2025-04-28 19:03:00,959 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/nescafe-gold-instant-coffee-powder-100-g/590067101
+2025-04-28 19:03:01,264 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/nescafe-gold-instant-coffee-powder-100-g/590067101
+2025-04-28 19:03:08,067 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/nescafe-gold-instant-coffee-powder-100-g/590067101
+2025-04-28 19:04:18,129 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:04:18,476 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:04:31,159 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:05:39,076 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:05:39,346 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:05:50,431 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:06:37,892 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:06:38,204 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:06:49,638 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/nescafe-gold-blend-instant-coffee-200-g/590067109
+2025-04-28 19:32:52,411 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-28 19:35:33,508 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:00:21,279 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/sagar-skimmed-milk-powder-1-kg-pouch/590770767
+2025-04-29 13:00:21,534 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/sagar-skimmed-milk-powder-1-kg-pouch/590770767
+2025-04-29 13:00:30,457 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/sagar-skimmed-milk-powder-1-kg-pouch/590770767
+2025-04-29 13:02:04,748 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/amul-choco-cracker-chocolate-bar-150-g/590067241
+2025-04-29 13:02:05,056 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/amul-choco-cracker-chocolate-bar-150-g/590067241
+2025-04-29 13:02:15,220 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/amul-choco-cracker-chocolate-bar-150-g/590067241
+2025-04-29 13:04:46,705 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:05:19,957 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://www.jiomart.com/p/groceries/schweppes-dry-ginger-ale-320ml-pack-of-12-cans-imported-product/604631451&ved=2ahUKEwiBz4W63fyMAxVMa_UHHcmTHQAQFnoECAYQAg&usg=AOvVaw0a1Xmc4Z18poyyA3hqq7Ey
+2025-04-29 13:05:20,214 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://www.jiomart.com/p/groceries/schweppes-dry-ginger-ale-320ml-pack-of-12-cans-imported-product/604631451&ved=2ahUKEwiBz4W63fyMAxVMa_UHHcmTHQAQFnoECAYQAg&usg=AOvVaw0a1Xmc4Z18poyyA3hqq7Ey
+2025-04-29 13:05:33,116 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.google.com/url?esrc=s&q=&rct=j&sa=U&url=https://www.jiomart.com/p/groceries/schweppes-dry-ginger-ale-320ml-pack-of-12-cans-imported-product/604631451&ved=2ahUKEwiBz4W63fyMAxVMa_UHHcmTHQAQFnoECAYQAg&usg=AOvVaw0a1Xmc4Z18poyyA3hqq7Ey
+2025-04-29 13:10:02,062 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:11:32,325 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:12:56,778 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:16:03,990 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:17:11,788 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:17:43,113 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/prime-ice-pop-stick-imported/604235489
+2025-04-29 13:17:43,361 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/prime-ice-pop-stick-imported/604235489
+2025-04-29 13:17:53,489 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/prime-ice-pop-stick-imported/604235489
+2025-04-29 13:19:33,898 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:22:54,170 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:23:43,892 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/trh-gule-anar-anar-ka-phool-punica-granatum-pomegranate-flower-anar-ke-sookhey-phool-100gm/598792475
+2025-04-29 13:23:44,154 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/trh-gule-anar-anar-ka-phool-punica-granatum-pomegranate-flower-anar-ke-sookhey-phool-100gm/598792475
+2025-04-29 13:23:58,003 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/trh-gule-anar-anar-ka-phool-punica-granatum-pomegranate-flower-anar-ke-sookhey-phool-100gm/598792475
+2025-04-29 13:24:46,613 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/arka-all-natural-desi-detox-kahwa-with-ashwagandha-sugar-free-antioxidant-indian-spices-10-sachets-in-each-box-3-box/595819905
+2025-04-29 13:24:46,881 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/arka-all-natural-desi-detox-kahwa-with-ashwagandha-sugar-free-antioxidant-indian-spices-10-sachets-in-each-box-3-box/595819905
+2025-04-29 13:24:55,770 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/arka-all-natural-desi-detox-kahwa-with-ashwagandha-sugar-free-antioxidant-indian-spices-10-sachets-in-each-box-3-box/595819905
+2025-04-29 13:27:15,043 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 13:30:22,585 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/gj-global-herb-slimfit-juice/595185154
+2025-04-29 13:30:22,836 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/gj-global-herb-slimfit-juice/595185154
+2025-04-29 13:30:33,600 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/gj-global-herb-slimfit-juice/595185154
+2025-04-29 13:32:33,828 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:37:04,062 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:39:42,702 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:41:00,680 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:42:15,458 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:43:39,031 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:44:59,315 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:46:19,651 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:47:40,358 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:48:57,214 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:50:23,426 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:51:44,610 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:53:07,153 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:54:31,945 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:55:47,298 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:57:06,934 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 18:57:34,828 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/teamex-healthy-natural-berry-juice-500ml-natural-blend-of-14-berries-for-health-and-nutrition/602107477
+2025-04-29 18:57:35,170 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/teamex-healthy-natural-berry-juice-500ml-natural-blend-of-14-berries-for-health-and-nutrition/602107477
+2025-04-29 18:57:47,953 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/teamex-healthy-natural-berry-juice-500ml-natural-blend-of-14-berries-for-health-and-nutrition/602107477
+2025-04-29 18:59:07,397 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 19:00:37,547 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 19:01:53,290 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 19:03:18,760 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 19:04:38,285 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-04-29 19:05:18,816 --|-- JIOMART --|-- INFO --|--  Found product URL: https://www.jiomart.com/p/groceries/giloy-juice-with-tulsi-and-papaya-for-immunity-building-500-ml/597948639
+2025-04-29 19:05:19,092 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/giloy-juice-with-tulsi-and-papaya-for-immunity-building-500-ml/597948639
+2025-04-29 19:05:29,659 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/giloy-juice-with-tulsi-and-papaya-for-immunity-building-500-ml/597948639
+2025-04-29 19:06:57,482 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-05-12 11:45:34,306 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:45:45,383 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:47:30,783 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:47:36,860 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:52:42,793 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:52:51,058 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:53:01,673 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:53:09,489 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:59:51,651 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 11:59:59,046 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:03:55,581 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:04:01,548 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:21:51,457 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 12:21:51,457 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 12:23:13,947 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:18,879 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:23,861 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:28,500 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:33,475 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:37,970 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:42,760 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:47,325 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:52,303 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:23:56,644 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:01,248 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:05,512 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:10,568 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:15,759 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:20,498 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:24,883 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:29,633 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:34,143 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:38,809 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:43,250 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:48,400 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:52,714 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:24:57,049 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:02,016 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:07,084 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:11,773 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:16,724 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:21,296 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:25,921 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:30,339 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:35,205 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:39,954 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:44,469 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:49,506 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:54,173 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:25:58,774 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:03,352 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:08,480 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:12,736 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:18,000 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:22,624 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:27,572 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:32,313 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:36,785 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:41,247 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:45,591 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:50,132 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:55,126 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:26:59,868 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:27:04,781 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:27:08,998 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:27:13,869 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:27:18,583 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:27:21,319 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-12 12:27:52,767 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 12:27:52,767 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 12:29:15,319 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 12:29:19,331 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 15
+2025-05-12 12:44:33,509 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:44:42,795 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:55:32,708 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:55:40,360 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:56:39,365 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:56:48,781 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:57:41,137 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:57:49,990 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:59:45,416 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 12:59:53,787 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:01:03,026 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:01:13,087 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:32:09,579 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:32:16,396 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:34:16,918 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:34:23,163 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:36:42,717 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:36:52,474 --|-- JIOMART --|-- INFO --|--  Scraped product https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:40:15,794 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 13:40:15,794 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 13:41:38,391 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 13:41:43,317 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 15
+2025-05-12 13:41:43,317 --|-- JIOMART --|-- INFO --|--  Found 15 product URLs to scrape
+2025-05-12 13:41:43,319 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-natural-smooth-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607656428
+2025-05-12 13:41:49,195 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-12 13:43:35,873 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 13:43:35,873 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 13:43:42,088 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-12 13:43:48,422 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 13:43:48,422 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 13:45:09,270 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 13:45:13,453 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 15
+2025-05-12 13:45:13,454 --|-- JIOMART --|-- INFO --|--  Found 15 product URLs to scrape
+2025-05-12 13:45:13,456 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-natural-smooth-jaggery-227kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607746821
+2025-05-12 13:45:27,342 --|-- JIOMART --|-- ERROR --|--  Critical error: HTTPConnectionPool(host='10.0.101.96', port=10000): Max retries exceeded with url: /insert (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x733c90e7dde0>: Failed to establish a new connection: [Errno 113] No route to host'))
+Traceback (most recent call last):
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/connection.py", line 445, in request
+    self.endheaders()
+  File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/connection.py", line 276, in connect
+    self.sock = self._new_conn()
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x733c90e7dde0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='10.0.101.96', port=10000): Max retries exceeded with url: /insert (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x733c90e7dde0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pc171013/PycharmProjects/ProductScrapper/Jiomart.py", line 373, in scrape_category
+    response = requests.post(url, json=self.filltered_scrapped_data(product_data))
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='10.0.101.96', port=10000): Max retries exceeded with url: /insert (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x733c90e7dde0>: Failed to establish a new connection: [Errno 113] No route to host'))
+2025-05-12 13:49:37,420 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 13:49:37,420 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/dr-p-nut/205709?prod_mart_master_vertical_products_popularity%5Bpage%5D=2
+2025-05-12 13:51:00,118 --|-- JIOMART --|-- INFO --|--  Collected 15 unique product URLs so far.
+2025-05-12 13:51:04,146 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 15
+2025-05-12 13:51:04,146 --|-- JIOMART --|-- INFO --|--  Found 15 product URLs to scrape
+2025-05-12 13:51:04,149 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-peanut-butter-chocolate-smooth-spread-1kg-30g-protein-vegan-tasty-healthy-nut-butter-spread-for-breakfast-snacks-cholesterol-free-zero-trans-fat-creamy-peanut-butter/611310608
+2025-05-12 13:51:15,764 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3006
+2025-05-12 13:51:17,766 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-227kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607659516
+2025-05-12 13:51:25,253 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3007
+2025-05-12 13:51:27,256 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-smooth-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-no-artificial-ingredients-non-gmo-chocolate-smooth/607657670
+2025-05-12 13:51:35,100 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3008
+2025-05-12 13:51:37,103 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-natural-smooth-jaggery-227kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607746821
+2025-05-12 13:51:43,625 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3009
+2025-05-12 13:51:45,627 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-smooth-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607660114
+2025-05-12 13:51:53,365 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3010
+2025-05-12 13:51:55,367 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658401
+2025-05-12 13:52:00,488 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3011
+2025-05-12 13:52:05,492 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-smooth-jaggery-227g-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607659735
+2025-05-12 13:52:10,282 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3012
+2025-05-12 13:52:14,283 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-natural-crunchy-jaggery-227kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607654143
+2025-05-12 13:52:21,767 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3013
+2025-05-12 13:52:26,772 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-510g-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607658275
+2025-05-12 13:52:32,989 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3014
+2025-05-12 13:52:37,995 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-peanut-butter-chocolate-crunchy-spread-1kg-30g-protein-vegan-tasty-healthy-nut-butter-spread-for-breakfast-snacks-cholesterol-free-zero-trans-fat-crunchy-peanut-butter/611310156
+2025-05-12 13:52:44,278 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3015
+2025-05-12 13:52:49,280 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-chocolate-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-no-artificial-ingredients-non-gmokg-chocolate-crunchy/607657907
+2025-05-12 13:52:54,861 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3016
+2025-05-12 13:52:58,864 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-natural-smooth-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607656428
+2025-05-12 13:53:03,885 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3017
+2025-05-12 13:53:07,890 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-natural-smooth-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-no-refined-sugar-no-artificial-ingredients-non-gmo-natural-smooth-jaggery/607655761
+2025-05-12 13:53:15,716 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3018
+2025-05-12 13:53:17,718 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-peanut-butter-jaggery-flavour-smooth-1kg-26g-protein-cholesterol-free-non-gmo-gluten-free-zero-trans-fat-9g-fiber-100-roasted-peanuts-healthy-tasty-nut-butter-1000-gm/611313194
+2025-05-12 13:53:22,314 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3019
+2025-05-12 13:53:25,316 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/dr-p-nut-natural-crunchy-jaggery-1kg-high-in-protein-vegan-cholesterol-free-no-hydrogenated-oil-no-trans-fat-power-of-jaggery-non-gmo-no-artificial-ingredients/607653757
+2025-05-12 13:53:32,488 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3020
+2025-05-12 13:53:37,494 --|-- JIOMART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-14 11:12:06,450 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/maggi/377
+2025-05-14 11:12:06,452 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/maggi/377
+2025-05-14 11:13:33,004 --|-- JIOMART --|-- INFO --|--  Collected 29 unique product URLs so far.
+2025-05-14 11:13:37,317 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 29
+2025-05-14 11:13:37,318 --|-- JIOMART --|-- INFO --|--  Found 29 product URLs to scrape
+2025-05-14 11:13:37,321 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-2-minute-masala-instant-noodles-280-g/490000365
+2025-05-14 11:13:48,691 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3176
+2025-05-14 11:13:51,695 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-masala-instant-cuppa-noodles-70-g/490392978
+2025-05-14 11:13:56,959 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3178
+2025-05-14 11:13:59,963 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-hot-sweet-tomato-chilli-sauce-200-g/490000486
+2025-05-14 11:14:09,542 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3180
+2025-05-14 11:14:12,546 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-hot-sweet-tomato-chilli-sauce-1-kg/490000488
+2025-05-14 11:14:17,988 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3182
+2025-05-14 11:14:19,990 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-2-minute-masala-instant-noodles-560-g/490003834
+2025-05-14 11:14:27,844 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3184
+2025-05-14 11:14:29,846 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-hot-sweet-tomato-chilli-sauce-pichkoo-90-g/490794208
+2025-05-14 11:14:35,767 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3186
+2025-05-14 11:14:40,772 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-2-minute-masala-instant-noodles-420-g/490009127
+2025-05-14 11:14:47,206 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3188
+2025-05-14 11:14:52,212 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-masala-ae-magic-6-g-pack-of-12/491410091
+2025-05-14 11:14:59,675 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3191
+2025-05-14 11:15:03,680 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-masala-ae-magic-120-g-pack-of-20/593411735
+2025-05-14 11:15:10,979 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3193
+2025-05-14 11:15:12,982 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-2-minute-masala-instant-noodles-140-g/490000364
+2025-05-14 11:15:20,409 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3195
+2025-05-14 11:15:25,415 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-masala-penne-instant-pazzta-family-saver-pack-130-g/491439724
+2025-05-14 11:15:33,534 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3198
+2025-05-14 11:15:35,536 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-masala-penne-instant-pazzta-65-g-pouch/490642339
+2025-05-14 11:15:41,441 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3200
+2025-05-14 11:15:43,443 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-hot-sweet-tomato-chilli-sauce-500-g/490000487
+2025-05-14 11:15:54,321 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3203
+2025-05-14 11:15:57,326 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-nutri-licious-atta-masala-spin-noodles-290-g/607762678
+2025-05-14 11:16:01,953 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3204
+2025-05-14 11:16:03,955 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-coconut-milk-powder-100-g/490009281
+2025-05-14 11:16:09,840 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3206
+2025-05-14 11:16:14,846 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-2-minute-special-masala-instant-noodles-70-g-pouch/491458259
+2025-05-14 11:16:19,946 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3208
+2025-05-14 11:16:22,949 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-rich-tomato-ketchup-500-g/490000491
+2025-05-14 11:16:30,481 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3210
+2025-05-14 11:16:32,484 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-cheese-macaroni-instant-pazzta-meal-pack-140-g/491439723
+2025-05-14 11:16:37,270 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3212
+2025-05-14 11:16:42,275 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-cheesy-tomato-twist-instant-pazzta-64-g/490810540
+2025-05-14 11:16:48,093 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3215
+2025-05-14 11:16:51,096 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-nutri-licious-masala-instant-atta-noodles-290-g-pouch/490007871
+2025-05-14 11:16:57,028 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3217
+2025-05-14 11:16:59,030 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-rich-tomato-sauce-no-onion-no-garlic-1-kg/490001966
+2025-05-14 11:17:06,070 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3219
+2025-05-14 11:17:11,075 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-nutri-licious-masala-instant-atta-noodles-72-5-g/490007870
+2025-05-14 11:17:15,911 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3221
+2025-05-14 11:17:19,915 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-nutri-licious-masala-veg-instant-atta-noodles-435-g/590142553
+2025-05-14 11:17:23,469 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3223
+2025-05-14 11:17:26,473 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-korean-bbq-veg-noodles-90-g/606342261
+2025-05-14 11:17:32,162 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3225
+2025-05-14 11:17:37,167 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-rich-tomato-ketchup-200-g/490000490
+2025-05-14 11:17:44,279 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3227
+2025-05-14 11:17:48,283 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-cheese-macaroni-instant-pazzta-70-g-pouch/490642340
+2025-05-14 11:17:53,355 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3229
+2025-05-14 11:17:56,359 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-2-minutes-masala-instant-noodles-no-onion-no-garlic-70-g/491282527
+2025-05-14 11:18:01,712 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3231
+2025-05-14 11:18:04,715 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-mushroom-penne-instant-pazzta-64-g/490870337
+2025-05-14 11:18:08,284 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3233
+2025-05-14 11:18:10,287 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/maggi-rich-tomato-sauce-no-onion-no-garlic-500-g/490001965
+2025-05-14 11:18:17,430 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3235
+2025-05-14 11:18:20,433 --|-- JIOMART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-14 11:26:59,889 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/red-label/555
+2025-05-14 11:26:59,889 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/red-label/555
+2025-05-14 11:28:17,518 --|-- JIOMART --|-- INFO --|--  Collected 8 unique product URLs so far.
+2025-05-14 11:28:22,086 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 8
+2025-05-14 11:28:22,086 --|-- JIOMART --|-- INFO --|--  Found 8 product URLs to scrape
+2025-05-14 11:28:22,090 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/red-label-leaf-tea-500-g-carton/490001269
+2025-05-14 11:28:31,361 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3291
+2025-05-14 11:28:33,362 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/red-label-leaf-tea-1-kg/490001992
+2025-05-14 11:28:38,800 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3292
+2025-05-14 11:28:42,804 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/red-label-leaf-tea-250-g-carton/490001268
+2025-05-14 11:28:49,168 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3293
+2025-05-14 11:28:52,170 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/red-label-natural-care-tea-250-g-carton/490967440
+2025-05-14 11:28:55,880 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3294
+2025-05-14 11:28:57,882 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/red-label-natural-care-tea-500-g-carton/490967439
+2025-05-14 11:29:03,264 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3295
+2025-05-14 11:29:06,268 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/red-label-natural-care-tea-100-g-carton/490967438
+2025-05-14 11:29:11,897 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3296
+2025-05-14 11:29:13,900 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/red-label-leaf-tea-100-g/490023081
+2025-05-14 11:29:18,439 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3297
+2025-05-14 11:29:20,442 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/red-label-natural-care-tea-1-kg/490967437
+2025-05-14 11:29:24,836 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3298
+2025-05-14 11:29:27,837 --|-- JIOMART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-14 11:35:58,883 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:35:58,883 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:37:20,917 --|-- JIOMART --|-- INFO --|--  Collected 17 unique product URLs so far.
+2025-05-14 11:37:25,732 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 17
+2025-05-14 11:37:25,732 --|-- JIOMART --|-- INFO --|--  Found 17 product URLs to scrape
+2025-05-14 11:37:25,735 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-bhujia-sev-1-kg/490009551
+2025-05-14 11:37:37,011 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3299
+2025-05-14 11:37:41,015 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-gulab-jamun-1-kg/490617282
+2025-05-14 11:37:49,108 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3300
+2025-05-14 11:37:52,111 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-phalhari-chiwda-150-g/490000276
+2025-05-14 11:37:56,525 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3301
+2025-05-14 11:38:00,529 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-rasgulla-1-kg/490009616
+2025-05-14 11:38:05,192 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3302
+2025-05-14 11:38:08,195 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-boondi-150-g/490081089
+2025-05-14 11:38:16,755 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3303
+2025-05-14 11:38:21,761 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-lite-chiwda-150-g/490842548
+2025-05-14 11:38:26,248 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3304
+2025-05-14 11:38:29,251 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-sweet-soanpapdi-500-g/490000292
+2025-05-14 11:38:34,774 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3305
+2025-05-14 11:38:36,777 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-moong-dal-350-g/490009368
+2025-05-14 11:38:41,373 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3306
+2025-05-14 11:38:44,376 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-moong-dal-150-g/490000281
+2025-05-14 11:38:51,257 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3307
+2025-05-14 11:38:54,260 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-all-in-one-namkeen-mixture-350-g/490009366
+2025-05-14 11:38:59,254 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3308
+2025-05-14 11:39:04,260 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-aloo-bhujia-150-g/490000270
+2025-05-14 11:39:09,469 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3309
+2025-05-14 11:39:14,474 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-soanpapdi-250-g/490000291
+2025-05-14 11:39:22,052 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3310
+2025-05-14 11:39:27,057 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-rassagulla-500-g/490000288
+2025-05-14 11:39:34,964 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3311
+2025-05-14 11:39:36,967 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-bhujia-sev-150-g/490000794
+2025-05-14 11:39:43,702 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3312
+2025-05-14 11:39:45,705 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-namkeen-mixture-150-g/490009363
+2025-05-14 11:39:50,646 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3313
+2025-05-14 11:39:54,650 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-panchratan-mixture-150-g/490000284
+2025-05-14 11:40:01,614 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3314
+2025-05-14 11:40:05,618 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-mini-bhakharwadi-200-g/490617278
+2025-05-14 11:40:10,393 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3315
+2025-05-14 11:40:13,397 --|-- JIOMART --|-- INFO --|--  Completed scraping. Results saved in DATABASE
+2025-05-14 11:41:25,725 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:41:25,726 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:41:50,688 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 11:43:19,927 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:43:19,927 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:43:25,743 --|-- JIOMART --|-- ERROR --|--  Critical error: Message: element not interactable
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x5c5df35c378a <unknown>
+#1 0x5c5df3065ef3 <unknown>
+#2 0x5c5df30b8bbe <unknown>
+#3 0x5c5df30abb9d <unknown>
+#4 0x5c5df30dd3a2 <unknown>
+#5 0x5c5df30ab51a <unknown>
+#6 0x5c5df30dd56e <unknown>
+#7 0x5c5df31032a0 <unknown>
+#8 0x5c5df30dd173 <unknown>
+#9 0x5c5df30a9d4b <unknown>
+#10 0x5c5df30aa9b1 <unknown>
+#11 0x5c5df358893b <unknown>
+#12 0x5c5df358c83a <unknown>
+#13 0x5c5df3570692 <unknown>
+#14 0x5c5df358d3c4 <unknown>
+#15 0x5c5df35554cf <unknown>
+#16 0x5c5df35b1568 <unknown>
+#17 0x5c5df35b1746 <unknown>
+#18 0x5c5df35c25f6 <unknown>
+#19 0x724436094ac3 <unknown>
+Traceback (most recent call last):
+  File "/home/pc171013/PycharmProjects/ProductScrapper/Jiomart.py", line 366, in scrape_category
+    product_urls = self.get_product_urls(category_url)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/Jiomart.py", line 216, in get_product_urls
+    checkbox.click()
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 119, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 572, in _execute
+    return self._parent.execute(command, params)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x5c5df35c378a <unknown>
+#1 0x5c5df3065ef3 <unknown>
+#2 0x5c5df30b8bbe <unknown>
+#3 0x5c5df30abb9d <unknown>
+#4 0x5c5df30dd3a2 <unknown>
+#5 0x5c5df30ab51a <unknown>
+#6 0x5c5df30dd56e <unknown>
+#7 0x5c5df31032a0 <unknown>
+#8 0x5c5df30dd173 <unknown>
+#9 0x5c5df30a9d4b <unknown>
+#10 0x5c5df30aa9b1 <unknown>
+#11 0x5c5df358893b <unknown>
+#12 0x5c5df358c83a <unknown>
+#13 0x5c5df3570692 <unknown>
+#14 0x5c5df358d3c4 <unknown>
+#15 0x5c5df35554cf <unknown>
+#16 0x5c5df35b1568 <unknown>
+#17 0x5c5df35b1746 <unknown>
+#18 0x5c5df35c25f6 <unknown>
+#19 0x724436094ac3 <unknown>
+
+2025-05-14 11:45:18,656 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:45:18,656 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:45:37,430 --|-- JIOMART --|-- ERROR --|--  Critical error: Message: element not interactable
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x5f6a6b19a78a <unknown>
+#1 0x5f6a6ac3cef3 <unknown>
+#2 0x5f6a6ac8fbbe <unknown>
+#3 0x5f6a6ac82b9d <unknown>
+#4 0x5f6a6acb43a2 <unknown>
+#5 0x5f6a6ac8251a <unknown>
+#6 0x5f6a6acb456e <unknown>
+#7 0x5f6a6acda2a0 <unknown>
+#8 0x5f6a6acb4173 <unknown>
+#9 0x5f6a6ac80d4b <unknown>
+#10 0x5f6a6ac819b1 <unknown>
+#11 0x5f6a6b15f93b <unknown>
+#12 0x5f6a6b16383a <unknown>
+#13 0x5f6a6b147692 <unknown>
+#14 0x5f6a6b1643c4 <unknown>
+#15 0x5f6a6b12c4cf <unknown>
+#16 0x5f6a6b188568 <unknown>
+#17 0x5f6a6b188746 <unknown>
+#18 0x5f6a6b1995f6 <unknown>
+#19 0x72cca4694ac3 <unknown>
+Traceback (most recent call last):
+  File "/home/pc171013/PycharmProjects/ProductScrapper/Jiomart.py", line 367, in scrape_category
+    product_urls = self.get_product_urls(category_url)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/Jiomart.py", line 217, in get_product_urls
+    checkbox.click()
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 119, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 572, in _execute
+    return self._parent.execute(command, params)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/home/pc171013/PycharmProjects/ProductScrapper/.venv/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x5f6a6b19a78a <unknown>
+#1 0x5f6a6ac3cef3 <unknown>
+#2 0x5f6a6ac8fbbe <unknown>
+#3 0x5f6a6ac82b9d <unknown>
+#4 0x5f6a6acb43a2 <unknown>
+#5 0x5f6a6ac8251a <unknown>
+#6 0x5f6a6acb456e <unknown>
+#7 0x5f6a6acda2a0 <unknown>
+#8 0x5f6a6acb4173 <unknown>
+#9 0x5f6a6ac80d4b <unknown>
+#10 0x5f6a6ac819b1 <unknown>
+#11 0x5f6a6b15f93b <unknown>
+#12 0x5f6a6b16383a <unknown>
+#13 0x5f6a6b147692 <unknown>
+#14 0x5f6a6b1643c4 <unknown>
+#15 0x5f6a6b12c4cf <unknown>
+#16 0x5f6a6b188568 <unknown>
+#17 0x5f6a6b188746 <unknown>
+#18 0x5f6a6b1995f6 <unknown>
+#19 0x72cca4694ac3 <unknown>
+
+2025-05-14 11:49:30,283 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:49:30,283 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:49:56,551 --|-- JIOMART --|-- INFO --|--  Collected 12 unique product URLs so far.
+2025-05-14 11:50:00,600 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 12
+2025-05-14 11:50:00,600 --|-- JIOMART --|-- INFO --|--  Found 12 product URLs to scrape
+2025-05-14 11:50:00,603 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-panchratan-mixture-150-g/490000284
+2025-05-14 11:50:10,254 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3316
+2025-05-14 11:50:12,255 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-namkeen-mixture-150-g/490009363
+2025-05-14 11:50:14,501 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 11:51:54,568 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:51:54,568 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:52:11,173 --|-- JIOMART --|-- ERROR --|--  Error: Message: 
+
+2025-05-14 11:52:21,601 --|-- JIOMART --|-- INFO --|--  Collected 12 unique product URLs so far.
+2025-05-14 11:52:25,607 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 12
+2025-05-14 11:52:25,607 --|-- JIOMART --|-- INFO --|--  Found 12 product URLs to scrape
+2025-05-14 11:52:25,610 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-rassagulla-500-g/490000288
+2025-05-14 11:52:29,676 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 11:53:32,470 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:53:32,470 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:53:39,289 --|-- JIOMART --|-- ERROR --|--  Error clicking out-of-stock checkbox: Message: element click intercepted: Element <span class="ais-RefinementList-labelText">...</span> is not clickable at point (478, 10). Other element would receive the click: <div class="header-main-wrapper">...</div>
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x5af38afde78a <unknown>
+#1 0x5af38aa810a0 <unknown>
+#2 0x5af38aad984c <unknown>
+#3 0x5af38aad76ac <unknown>
+#4 0x5af38aad4d42 <unknown>
+#5 0x5af38aad4440 <unknown>
+#6 0x5af38aac6b9d <unknown>
+#7 0x5af38aaf83a2 <unknown>
+#8 0x5af38aac651a <unknown>
+#9 0x5af38aaf856e <unknown>
+#10 0x5af38ab1e2a0 <unknown>
+#11 0x5af38aaf8173 <unknown>
+#12 0x5af38aac4d4b <unknown>
+#13 0x5af38aac59b1 <unknown>
+#14 0x5af38afa393b <unknown>
+#15 0x5af38afa783a <unknown>
+#16 0x5af38af8b692 <unknown>
+#17 0x5af38afa83c4 <unknown>
+#18 0x5af38af704cf <unknown>
+#19 0x5af38afcc568 <unknown>
+#20 0x5af38afcc746 <unknown>
+#21 0x5af38afdd5f6 <unknown>
+#22 0x7db65f494ac3 <unknown>
+
+2025-05-14 11:53:49,582 --|-- JIOMART --|-- INFO --|--  Collected 12 unique product URLs so far.
+2025-05-14 11:53:53,590 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 12
+2025-05-14 11:53:53,590 --|-- JIOMART --|-- INFO --|--  Found 12 product URLs to scrape
+2025-05-14 11:53:53,593 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-panchratan-mixture-150-g/490000284
+2025-05-14 11:53:56,983 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 11:54:20,852 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:54:20,852 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:54:32,610 --|-- JIOMART --|-- ERROR --|--  Error clicking out-of-stock checkbox: Message: element click intercepted: Element <span class="ais-RefinementList-labelText">...</span> is not clickable at point (478, 10). Other element would receive the click: <div class="header-main-wrapper">...</div>
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x5dce6f67d78a <unknown>
+#1 0x5dce6f1200a0 <unknown>
+#2 0x5dce6f17884c <unknown>
+#3 0x5dce6f1766ac <unknown>
+#4 0x5dce6f173d42 <unknown>
+#5 0x5dce6f173440 <unknown>
+#6 0x5dce6f165b9d <unknown>
+#7 0x5dce6f1973a2 <unknown>
+#8 0x5dce6f16551a <unknown>
+#9 0x5dce6f19756e <unknown>
+#10 0x5dce6f1bd2a0 <unknown>
+#11 0x5dce6f197173 <unknown>
+#12 0x5dce6f163d4b <unknown>
+#13 0x5dce6f1649b1 <unknown>
+#14 0x5dce6f64293b <unknown>
+#15 0x5dce6f64683a <unknown>
+#16 0x5dce6f62a692 <unknown>
+#17 0x5dce6f6473c4 <unknown>
+#18 0x5dce6f60f4cf <unknown>
+#19 0x5dce6f66b568 <unknown>
+#20 0x5dce6f66b746 <unknown>
+#21 0x5dce6f67c5f6 <unknown>
+#22 0x7a6acb294ac3 <unknown>
+
+2025-05-14 11:54:40,171 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 11:55:29,224 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:55:29,224 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 11:55:40,079 --|-- JIOMART --|-- ERROR --|--  Error clicking out-of-stock checkbox: Message: element click intercepted: Element <span class="ais-RefinementList-labelText">...</span> is not clickable at point (478, 10). Other element would receive the click: <div class="header-main-wrapper">...</div>
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x5cd680b6678a <unknown>
+#1 0x5cd6806090a0 <unknown>
+#2 0x5cd68066184c <unknown>
+#3 0x5cd68065f6ac <unknown>
+#4 0x5cd68065cd42 <unknown>
+#5 0x5cd68065c440 <unknown>
+#6 0x5cd68064eb9d <unknown>
+#7 0x5cd6806803a2 <unknown>
+#8 0x5cd68064e51a <unknown>
+#9 0x5cd68068056e <unknown>
+#10 0x5cd6806a62a0 <unknown>
+#11 0x5cd680680173 <unknown>
+#12 0x5cd68064cd4b <unknown>
+#13 0x5cd68064d9b1 <unknown>
+#14 0x5cd680b2b93b <unknown>
+#15 0x5cd680b2f83a <unknown>
+#16 0x5cd680b13692 <unknown>
+#17 0x5cd680b303c4 <unknown>
+#18 0x5cd680af84cf <unknown>
+#19 0x5cd680b54568 <unknown>
+#20 0x5cd680b54746 <unknown>
+#21 0x5cd680b655f6 <unknown>
+#22 0x742a0cc94ac3 <unknown>
+
+2025-05-14 11:55:50,482 --|-- JIOMART --|-- INFO --|--  Collected 12 unique product URLs so far.
+2025-05-14 11:55:54,795 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 12
+2025-05-14 11:55:54,796 --|-- JIOMART --|-- INFO --|--  Found 12 product URLs to scrape
+2025-05-14 11:55:54,800 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-mini-bhakharwadi-200-g/490617278
+2025-05-14 11:55:54,818 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 12:01:19,185 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 12:01:19,185 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 12:01:28,775 --|-- JIOMART --|-- ERROR --|--  Error clicking out-of-stock checkbox: Message: element not interactable
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x61f12f49578a <unknown>
+#1 0x61f12ef37ef3 <unknown>
+#2 0x61f12ef8abbe <unknown>
+#3 0x61f12ef7db9d <unknown>
+#4 0x61f12efaf3a2 <unknown>
+#5 0x61f12ef7d51a <unknown>
+#6 0x61f12efaf56e <unknown>
+#7 0x61f12efd52a0 <unknown>
+#8 0x61f12efaf173 <unknown>
+#9 0x61f12ef7bd4b <unknown>
+#10 0x61f12ef7c9b1 <unknown>
+#11 0x61f12f45a93b <unknown>
+#12 0x61f12f45e83a <unknown>
+#13 0x61f12f442692 <unknown>
+#14 0x61f12f45f3c4 <unknown>
+#15 0x61f12f4274cf <unknown>
+#16 0x61f12f483568 <unknown>
+#17 0x61f12f483746 <unknown>
+#18 0x61f12f4945f6 <unknown>
+#19 0x7b0f61e94ac3 <unknown>
+
+2025-05-14 12:01:39,054 --|-- JIOMART --|-- INFO --|--  Collected 12 unique product URLs so far.
+2025-05-14 12:01:43,293 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 12
+2025-05-14 12:01:43,293 --|-- JIOMART --|-- INFO --|--  Found 12 product URLs to scrape
+2025-05-14 12:01:43,297 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-moong-dal-150-g/490000281
+2025-05-14 12:01:51,583 --|-- JIOMART --|-- INFO --|--  Inserted product with ID: 3317
+2025-05-14 12:01:52,855 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 12:02:06,550 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 12:02:06,550 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 12:02:12,056 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 12:02:37,943 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 12:02:37,943 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 12:02:47,951 --|-- JIOMART --|-- INFO --|--  Collected 12 unique product URLs so far.
+2025-05-14 12:02:52,558 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 12
+2025-05-14 12:02:52,558 --|-- JIOMART --|-- INFO --|--  Found 12 product URLs to scrape
+2025-05-14 12:02:52,561 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-mini-bhakharwadi-200-g/490617278
+2025-05-14 12:02:57,846 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 12:03:01,298 --|-- JIOMART --|-- INFO --|--  Starting scraping for URL: https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 12:03:01,298 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/groceries/b/haldiram-s-nagpur/193803
+2025-05-14 12:03:10,818 --|-- JIOMART --|-- INFO --|--  Collected 12 unique product URLs so far.
+2025-05-14 12:03:15,319 --|-- JIOMART --|-- INFO --|--  Total product URLs collected: 12
+2025-05-14 12:03:15,319 --|-- JIOMART --|-- INFO --|--  Found 12 product URLs to scrape
+2025-05-14 12:03:15,322 --|-- JIOMART --|-- INFO --|--  Attempt 1 to load https://www.jiomart.com/p/groceries/haldiram-s-nagpur-rassagulla-500-g/490000288
+2025-05-14 12:03:18,534 --|-- JIOMART --|-- INFO --|--  
+Scraping stopped by user
+2025-05-14 12:41:04,568 --|-- JIOMART --|-- WARNING --|--  No product URL found
+2025-05-14 12:51:51,182 --|-- JIOMART --|-- WARNING --|--  No product URL found

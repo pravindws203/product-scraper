@@ -1,0 +1,18 @@
+2025-04-17 14:47:17,665 [INFO] [→] Classifying row 17/21 with 9 image URLs
+2025-04-17 14:47:19,376 [WARNING] [!] Gemini API attempt 1 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:20,652 [WARNING] [!] Gemini API attempt 2 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:22,936 [WARNING] [!] Gemini API attempt 3 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:26,940 [ERROR] [✖] Gemini API failed after all retries
+2025-04-17 14:47:31,949 [INFO] [→] Classifying row 19/21 with 9 image URLs
+2025-04-17 14:47:32,240 [WARNING] [!] Gemini API attempt 1 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:33,524 [WARNING] [!] Gemini API attempt 2 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:35,802 [WARNING] [!] Gemini API attempt 3 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:39,806 [ERROR] [✖] Gemini API failed after all retries
+2025-04-17 14:47:44,813 [INFO] [→] Classifying row 20/21 with 8 image URLs
+2025-04-17 14:47:45,093 [WARNING] [!] Gemini API attempt 1 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:46,370 [WARNING] [!] Gemini API attempt 2 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:48,651 [WARNING] [!] Gemini API attempt 3 failed: 400 Client Error: Bad Request for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_GEMINI_API_KEY
+2025-04-17 14:47:52,653 [ERROR] [✖] Gemini API failed after all retries
+2025-04-17 14:47:57,660 [INFO] [✔] Finished updating CSV: amazon_beverage_ai.csv
+2025-04-17 14:48:43,657 [INFO] [→] Classifying row 17/21 with 9 image URLs
+2025-04-17 14:48:46,520 [INFO] [✔] Finished updating CSV: amazon_beverage_ai.csv

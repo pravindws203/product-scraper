@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product {{ product.id}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+   <!-- Product Header Section -->
+    <div class="container mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
+        <!-- Product Name -->
+        <a href="{{product.product_url}}" class="text-blue-500 hover:underline" target="_blank">
+            <h1 class="text-4xl font-semibold text-center text-gray-800 mb-4">{{ product.name }}</h1>
+        </a>
+
+        <!-- Brand Name -->
+        <div class="flex justify-center items-center mt-2">
+            <p class="text-xl font-medium text-gray-700">
+                <span class="font-semibold text-gray-800">Brand:</span> {{ product.brand_name }}
+            </p>
+        </div>
+        <!-- Barcode and Status Information -->
+        <div class="flex justify-between items-center mt-4 p-4 border-t border-gray-300">
+            <div class="flex items-center space-x-4">
+                <!-- Barcode -->
+                <p class="text-xl font-medium text-gray-700">
+                    <span class="font-semibold text-gray-800">Barcode:</span> {{ product.barcode }}
+                </p>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <!-- Status -->
+                <p class="text-xl font-medium text-gray-700">
+                    <span class="font-semibold text-gray-800">Status:</span>
+
+                    {% if product.status == 'imageprocessed' %}
+                        <span class="px-2 py-1 text-sm font-bold rounded-full bg-green-200 text-green-800">
+                            {{ product.status }}
+                        </span>
+                    {% else %}
+                        <span class="px-2 py-1 text-sm font-bold rounded-full bg-red-200 text-red-800">
+                            {{ product.status }}
+                        </span>
+                    {% endif %}
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Images Section -->
+    <div class="container mx-auto p-6 mt-6 bg-white shadow-lg rounded-lg">
+
+        <!-- Flex container for two columns -->
+        <div class="flex gap-6">
+
+            <!-- Column 1: 4 images in 2x2 grid -->
+            <div class="grid grid-cols-2 gap-4 w-3/5">
+
+                <!-- Front Image -->
+                <div id="front-image" class="w-full h-80 bg-gray-100 flex flex-col items-center justify-start rounded-lg overflow-hidden relative"
+                     ondrop="dropHandler(event, 'front')" ondragover="dragOverHandler(event)">
+                    <div class="absolute top-2 left-2 text-sm font-semibold text-gray-600 bg-white px-2 rounded-lg shadow-md">Front Image</div>
+
+                    {% if product.front_img is not None %}
+                        <img id="img-front" src="{{ product.front_img }}" alt="Front Image" class="w-full h-full object-contain">
+                    {% else %}
+                        <img id="img-front" alt="Front Image" class="w-full h-full object-contain">
+                    {% endif %}
+
+                    <!-- Delete Button for Front Image (top-right corner) -->
+                    <button type="button" onclick="deleteImage('front')" class="absolute top-2 right-2 px-3 py-2 bg-red-500 text-white rounded-full shadow-md">Delete</button>
+                </div>
+
+                <!-- Back Image -->
+                <div id="back-image" class="w-full h-80 bg-gray-100 flex flex-col items-center justify-start rounded-lg overflow-hidden relative"
+                     ondrop="dropHandler(event, 'back')" ondragover="dragOverHandler(event)">
+                    <!-- Label for Back Image (top-left corner) -->
+                    <div class="absolute top-2 left-2 text-sm font-semibold text-gray-600 bg-white px-2 rounded-lg shadow-md">Back Image</div>
+
+                    {% if product.back_img is not None %}
+                        <img id="img-back" src="{{ product.back_img }}" alt="Back Image" class="w-full h-full object-contain">
+                    {% else %}
+                        <img id="img-back" alt="Back Image" class="w-full h-full object-contain">
+                    {% endif %}
+
+                    <!-- Delete Button for Back Image (top-right corner) -->
+                    <button type="button" onclick="deleteImage('back')" class="absolute top-2 right-2 px-3 py-2 bg-red-500 text-white rounded-full shadow-md">Delete</button>
+                </div>
+
+                <!-- Nutrients Image -->
+                <div id="nutrients-image" class="w-full h-80 bg-gray-100 flex flex-col items-center justify-start rounded-lg overflow-hidden relative"
+                     ondrop="dropHandler(event, 'nutrients')" ondragover="dragOverHandler(event)">
+                    <!-- Label for Nutrients Image (top-left corner) -->
+                    <div class="absolute top-2 left-2 text-sm font-semibold text-gray-600 bg-white px-2 rounded-lg shadow-md">Nutrients Image</div>
+
+                    {% if product.nutrients_img is not None %}
+                        <img id="img-nutrients" src="{{ product.nutrients_img }}" alt="Nutrients Image" class="w-full h-full object-contain">
+                    {% else %}
+                        <img id="img-nutrients" alt="Nutrients Image" class="w-full h-full object-contain">
+                    {% endif %}
+
+                    <!-- Delete Button for Nutrients Image (top-right corner) -->
+                    <button type="button" onclick="deleteImage('nutrients')" class="absolute top-2 right-2 px-3 py-2 bg-red-500 text-white rounded-full shadow-md">Delete</button>
+                </div>
+
+                <!-- Ingredients Image -->
+                <div id="ingredients-image" class="w-full h-80 bg-gray-100 flex flex-col items-center justify-start rounded-lg overflow-hidden relative"
+                     ondrop="dropHandler(event, 'ingredients')" ondragover="dragOverHandler(event)">
+                    <!-- Label for Ingredients Image (top-left corner) -->
+                    <div class="absolute top-2 left-2 text-sm font-semibold text-gray-600 bg-white px-2 rounded-lg shadow-md">Ingredients Image</div>
+
+                    {% if product.ingredients_img is not None %}
+                        <img id="img-ingredients" src="{{ product.ingredients_img }}" alt="Ingredients Image" class="w-full h-full object-contain">
+                    {% else %}
+                        <img id="img-ingredients" alt="Ingredients Image" class="w-full h-full object-contain">
+                    {% endif %}
+
+                    <!-- Delete Button for Ingredients Image (top-right corner) -->
+                    <button type="button" onclick="deleteImage('ingredients')" class="absolute top-2 right-2 px-3 py-2 bg-red-500 text-white rounded-full shadow-md">Delete</button>
+                </div>
+
+            </div>
+
+            <!-- Column 2: smaller images with horizontal slider -->
+            <div class="mt-6 w-2/5">
+                <div class="overflow-x-auto flex gap-4 py-2">
+                    {% for image in product.images %}
+                        <div class="min-w-[6rem] h-80 bg-gray-100 flex items-center justify-center rounded-lg overflow-hidden flex-shrink-0">
+                            {% if image %}
+                                <img src="{{ image }}" alt="Product Image" class="w-full h-full object-cover cursor-grab"
+                                     draggable="true" ondragstart="dragStartHandler(event)">
+                            {% else %}
+                                <span class="text-gray-400">No Image</span>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Update Button -->
+        <div class="mt-6 flex justify-center">
+            <button id="updateButton" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                Update Images
+            </button>
+        </div>
+    </div>
+
+    <!-- Product Information Submission Form -->
+    <div class="container mx-auto p-6 bg-gray-50 shadow-md rounded-lg mt-6">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Product Information</h2>
+    <form id="product-info-form">
+        <!-- Brand (Text Input) -->
+        <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2" for="brand">Brand</label>
+            <input
+                type="text"
+                id="brand"
+                name="brand"
+                value="{{  product.brand_name|default:''  }}"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2" for="barcode">Barcode</label>
+            <input
+                type="text"
+                id="barcode"
+                name="barcode"
+                value="{{ product.barcode|default:'' }}"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+        </div>
+
+        <!-- Ingredients -->
+        <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2" for="ingredients_main_ocr">Ingredients (OCR)</label>
+            <textarea
+                id="ingredients_main_ocr"
+                name="ingredients_main_ocr"
+                rows="4"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >{{ product.ingredients_main_ocr|default:'' }}</textarea>
+        </div>
+
+        <!-- Nutrients -->
+        <div class="mb-4">
+            <label class="block text-gray-700 font-medium mb-2" for="nutrients_main_ocr">Nutrients (OCR)</label>
+            <textarea
+                id="nutrients_main_ocr"
+                name="nutrients_main_ocr"
+                rows="4"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >{{ product.nutrients_main_ocr|default:'' }}</textarea>
+        </div>
+
+        <!-- Allergen Info -->
+        <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2" for="allergen_information">Allergen Information</label>
+            <textarea
+                id="allergen_information"
+                name="allergen_information"
+                rows="2"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >{{ product.allergen_information|default:'' }}</textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button
+                type="submit"
+                class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
+
+    <!-- Add JS for Drag and Drop and API Call -->
+    <script>
+        let draggedImageUrl = '';
+
+        function dragStartHandler(event) {
+            draggedImageUrl = event.target.src;
+        }
+
+        function dragOverHandler(event) {
+            event.preventDefault();
+        }
+
+        function dropHandler(event, type) {
+            event.preventDefault();
+            if (draggedImageUrl) {
+                const imgElement = document.getElementById(`img-${type}`);
+                imgElement.src = draggedImageUrl;
+                imgElement.style.display = 'block';
+            }
+        }
+
+        // Function to delete the image by removing the src attribute
+        function deleteImage(imageType) {
+            const imgElement = document.getElementById('img-' + imageType);
+            if (imgElement) {
+                imgElement.removeAttribute('src');  // Remove the src attribute to delete the image
+                imgElement.alt = `${imageType.charAt(0).toUpperCase() + imageType.slice(1)} Image`;  // Optional: change alt text
+            }
+        }
+
+        // Function to handle the API call for updating the images
+        function updateProductImages() {
+            // Get the current image URLs
+            const frontImage = document.getElementById('img-front').src;
+            const backImage = document.getElementById('img-back').src;
+            const nutrientsImage = document.getElementById('img-nutrients').src;
+            const ingredientsImage = document.getElementById('img-ingredients').src;
+
+            // Assume you have the product ID available (replace with actual product ID)
+            const productId = '{{ product.id }}';
+
+            // Create a payload with the image URLs and product ID
+            const payload = {
+                id: productId,
+                front_img: frontImage,
+                back_img: backImage,
+                nutrients_img: nutrientsImage,
+                ingredients_img: ingredientsImage
+            };
+            // Make the API call (replace URL with the actual API endpoint)
+            fetch('http://10.0.101.153:10000/image/update', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept' : '*/*',
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(data.message);
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error updating images:', error);
+                alert('An error occurred. Please try again.');
+            });
+        }
+
+        // Add event listener to the update button
+        document.getElementById('updateButton').addEventListener('click', updateProductImages);
+
+        document.getElementById("product-info-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const productId = '{{ product.id }}';
+            const data = {
+                id: productId,
+                brand_name: document.getElementById("brand").value,
+                barcode: document.getElementById("barcode").value,
+                ingredients_main_ocr: document.getElementById("ingredients_main_ocr").value,
+                nutrients_main_ocr: document.getElementById("nutrients_main_ocr").value,
+                allergen_information: document.getElementById("allergen_information").value
+            };
+
+            fetch("http://10.0.101.153:10000/productinfo/update", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.ok) return response.json();
+                throw new Error("Failed to submit");
+            })
+            .then(result => {
+                alert("Product information submitted successfully!");
+                console.log(result);
+            })
+            .catch(error => {
+                alert("Error submitting data.");
+                console.error(error);
+            });
+        });
+    </script>
+
+
+</body>
+</html>
