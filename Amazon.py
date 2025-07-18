@@ -50,17 +50,11 @@ class Amazon:
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0',
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edge/114.0.1823.67',
-      'Mozilla/5.0 (iPhone; CPU iPhone OS 15_6_1 like Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Version/15.6 Mobile/15E148 Safari/537.36',
-      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/90.0.4480.80',
-      'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_5_2) AppleWebKit/537.36 (KHTML, like Gecko) Version/14.0.3 Safari/537.36',
-      'Mozilla/5.0 (Linux; Android 11; Pixel 4 XL Build/RQ3A.210805.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',
-      'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:114.0) Gecko/20100101 Firefox/114.0',
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; AS; Desktop) like Gecko',
-      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.67',
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Brave/1.43.88',
       'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Vivaldi/5.8.2945.60'
     ]
-    self.MAX_SCROLL_RETRIES = 15
+    self.MAX_SCROLL_RETRIES = 10
     self.SCROLL_PAUSE_TIME = 4
     self.MAX_RETRIES = 3
     self.PAGE_LOAD_TIMEOUT = 20
@@ -304,11 +298,14 @@ class Amazon:
             if script and "colorImages" in str(script):
                 json_str = script.string or script.get_text()
                 if json_str:
-                    json_str = json_str.replace("'", '"')  # Convert to valid JSON format
-                    matches = re.findall(r'"hiRes"\s*:\s*"([^"]+)"', json_str)
-                    image_urls.extend(matches)
-                    if matches:
-                        break
+                  json_str = json_str.replace("'", '"')  # Convert to valid JSON format
+                  matches_hd = re.findall(r'"hiRes"\s*:\s*"([^"]+)"', json_str)
+                  image_urls.extend(matches_hd)
+                  matches = re.findall(r'"large"\s*:\s*"([^"]+)"', json_str)
+                  image_urls.extend(matches)
+
+                  if matches:
+                      break
     except Exception as e:
         self.logger.error(f"Error extracting images from JS: {e}")
     
@@ -383,9 +380,12 @@ class Amazon:
         time.sleep(self.SCROLL_PAUSE_TIME + random.random())
         new_height = self.driver.execute_script("return document.body.scrollHeight")
         
-        button = wait.until(EC.element_to_be_clickable(
-          (By.CSS_SELECTOR, "button.Button__secondary__sMAVa")))
-        button.click()
+        try:
+          button = wait.until(EC.element_to_be_clickable(
+            (By.CSS_SELECTOR, "button.Button__secondary__sMAVa")))
+          button.click()
+        except:
+          pass
         
         if new_height == last_height:
           retries += 1
@@ -430,7 +430,13 @@ class Amazon:
                 'ProductGridItem__overlay__IQ3Kw' in x or
                 ('a-link-normal' in x and 's-no-outline' in x)
             ))
-
+            product_link = soup.find_all('a', class_=re.compile(r'ProductShowcase__title__'))
+            
+            for product in product_link:
+              href = product.get('href')
+              if href and '/dp/' in href:
+                product_urls.add('https://www.amazon.in' + href)
+              
             for product in product_elements:
                 href = product.get('href')
                 if href and '/dp/' in href:
@@ -518,17 +524,7 @@ class Amazon:
       self.logger.info(f"Starting scraping for URL: {category_url}")
       print(f"Starting scraping for URL: {category_url}")
       product_urls = self.get_product_urls(category_url)
-      product_urls += ["https://www.amazon.in/STROOM-Centre-Filled-Protein-Variety/dp/B0DJWKQVW4?ref_=ast_sto_dp&th=1",
-                      "https://www.amazon.in/STROOM-Centre-Filled-Protein-Variety/dp/B0DJWJX31W?ref_=ast_sto_dp&th=1",
-                      "https://www.amazon.in/STROOM-Centre-Filled-Protein-Variety/dp/B0DJWK26YW?ref_=ast_sto_dp&th=1",
-                      "https://www.amazon.in/STROOM-Centre-Filled-Protein-Variety/dp/B0DJWL3WHP?ref_=ast_sto_dp&th=1",
-                      "https://www.amazon.in/STROOM-Centre-Filled-Protein-Variety/dp/B0DJWD995M?ref_=ast_sto_dp&th=1",]
-      
-      # url = "http://10.0.101.153:10000/producturl"
-      # response = requests.get(url)
-      # if response.status_code == 200:
-      #   data = response.json()
-      #   product_urls += data
+      product_urls += ["https://www.amazon.in/Green-Gainz-Roasted-Edamame-Flavour/dp/B0DRS9SYYM?ref_=ast_sto_dp&th=1",]
       
       if not product_urls:
         self.logger.error("No product URLs found")
@@ -568,3 +564,47 @@ class Amazon:
     finally:
       if self.driver:
         self.driver.quit()
+  
+  def scrape_product(self, product_url: str) -> None:
+    """Main method to scrape an Amazon category"""
+    try:
+      if not self.init_driver():
+        raise WebDriverException("Failed to initialize WebDriver")
+      
+      if not product_url:
+        self.logger.error("No product URLs found")
+        return
+      
+      product_data = self.get_product_details(product_url)
+      if product_data:
+        # print(f"Scraped product {i}/{len(product_urls)}: {product_data}")
+        url = "http://10.0.101.153:10000/insert"
+        response = requests.post(url, json=product_data)
+        if response.status_code == 200:
+          self.logger.info(f"Inserted product with ID: {response.json().get('id')}")
+        else:
+          self.logger.error(f"Failed to insert product data: {response.status_code}")
+        
+      else:
+        self.logger.error(f"Failed to scrape product {product_url}")
+        
+        time.sleep(random.randint(2, 5))
+      
+      self.logger.info(f"Completed scraping. Results saved in DATABASE")
+    
+    except KeyboardInterrupt:
+      self.logger.info("\nScraping stopped by user")
+    except Exception as e:
+      self.logger.error(f"Critical error: {e}", exc_info=True)
+    finally:
+      if self.driver:
+        self.driver.quit()
+        
+if __name__ == "__main__":
+  url = input("Enter Amazon Scrap Category Url: ").strip()
+  option = input("This is a Product url Y/n: ").strip().lower()
+  amazon_screpped = Amazon(headless=False)
+  if option == 'y':
+    amazon_screpped.scrape_product(product_url=url)
+  else:
+    amazon_screpped.scrape_category(category_url=url)
