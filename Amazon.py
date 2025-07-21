@@ -422,9 +422,16 @@ class Amazon:
 
     self._load_all_products()
     product_urls = set()
+    
+    last_height = self.driver.execute_script("return document.body.scrollHeight")
+    footer_height = self.driver.execute_script(
+      "return document.getElementById('navFooter').offsetHeight;")
 
     while True:
         try:
+            self.driver.execute_script(
+              f"window.scrollTo(0, {last_height - footer_height - random.randint(600, 700)});")
+            time.sleep(self.SCROLL_PAUSE_TIME + random.randint(1,5))
             soup = BeautifulSoup(self.driver.page_source, 'html.parser')
             product_elements = soup.find_all('a', class_=lambda x: x and (
                 'ProductGridItem__overlay__IQ3Kw' in x or
@@ -524,8 +531,8 @@ class Amazon:
       self.logger.info(f"Starting scraping for URL: {category_url}")
       print(f"Starting scraping for URL: {category_url}")
       product_urls = self.get_product_urls(category_url)
-      product_urls += ["https://www.amazon.in/Green-Gainz-Roasted-Edamame-Flavour/dp/B0DRS9SYYM?ref_=ast_sto_dp&th=1",]
-      
+     
+     
       if not product_urls:
         self.logger.error("No product URLs found")
         return
