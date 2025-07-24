@@ -531,8 +531,7 @@ class Amazon:
       self.logger.info(f"Starting scraping for URL: {category_url}")
       print(f"Starting scraping for URL: {category_url}")
       product_urls = self.get_product_urls(category_url)
-     
-     
+
       if not product_urls:
         self.logger.error("No product URLs found")
         return

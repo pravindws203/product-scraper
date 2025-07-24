@@ -75,6 +75,32 @@ class MySQLDB:
     ]
     return self._execute_query(query, columns)
   
+  def delete_data(self, id):
+    """
+    Fetch scraped product images from database
+
+    Returns:
+        List of dictionaries containing image URLs for each product
+    """
+    try:
+      if not self._connect():
+        return 0
+      
+      cursor = self.connection.cursor()
+      query = f"DELETE FROM scrapped_data WHERE id = {id}"
+      cursor.execute(query)
+      self.connection.commit()
+      return True
+    
+    except mysql.connector.Error as err:
+      print(f"Insert error: {err}")
+      return False
+    finally:
+      if cursor:
+        cursor.close()
+      self._disconnect()
+    
+  
   def get_data(self, table: str, columns: List[str] = ['*'],
                where: Optional[str] = None) -> List[Dict[str, Union[str, int, float, dict]]]:
     """
@@ -227,6 +253,33 @@ class MySQLDB:
     except mysql.connector.Error as err:
       self.logger.error(f"Query error: {err}")
       return []
+    finally:
+      if cursor:
+        cursor.close()
+      self._disconnect()
+  
+  def _execute_non_select_query(self, query: str) -> bool:
+    """
+    Args:
+        query (str): SQL query to execute
+
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    try:
+      if not self._connect():
+        return False
+      
+      cursor = self.connection.cursor()
+      cursor.execute(query)
+      self.connection.commit()
+      self.logger.info(f"Non-SELECT query executed successfully: {query}")
+      return True
+    
+    except mysql.connector.Error as err:
+      self.logger.error(f"Query error: {err}")
+      return False
+    
     finally:
       if cursor:
         cursor.close()
