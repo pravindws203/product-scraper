@@ -323,7 +323,7 @@ async def get_all_ids():
       database="Product_Webscrapping"
     )
     result = db._execute_query(
-      "SELECT id FROM scrapped_data WHERE barcode_exists = 0 and is_uploaded = 0 and id > 7000",
+      "SELECT id FROM scrapped_data WHERE barcode_exists = 0 and is_uploaded = 0 and id > 9400",
       ['id']
     )
     id_list = [item['id'] for item in result]
@@ -332,6 +332,27 @@ async def get_all_ids():
   except Exception as e:
     raise HTTPException(status_code=400, detail="Database error") from e
 
+
+@app.get("/imageprocessed/barcodeids")
+async def get_all_ids():
+  """Retrieve all IDs with 'raw' status from the database."""
+  try:
+    db = MySQLDB(
+      host="localhost",
+      user="root",
+      password="Admin@123",
+      database="Product_Webscrapping"
+    )
+    result = db._execute_query(
+      "SELECT id FROM scrapped_data WHERE barcode_exists = 0 and is_uploaded = 0 and status = 'imageprocessed' and id > 9400",
+      ['id']
+    )
+    id_list = [item['id'] for item in result]
+    return {"id": id_list}
+  
+  except Exception as e:
+    raise HTTPException(status_code=400, detail="Database error") from e
+  
 @app.get("/rawids")
 async def get_all_raw_ids():
   """Retrieve all IDs with 'raw' status from the database."""
@@ -344,7 +365,7 @@ async def get_all_raw_ids():
     )
   
     result = db._execute_query(
-      "SELECT id FROM scrapped_data WHERE status = 'raw' and is_uploaded = 0 and id > 7000",
+      "SELECT id FROM scrapped_data WHERE status = 'raw' and is_uploaded = 0 and id > 9400",
       ['id']
     )
     if not result:

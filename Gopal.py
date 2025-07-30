@@ -447,4 +447,4 @@ class Gopal:
 
 if __name__ == "__main__":
   gopal_screpped = Gopal(headless=False)
-  gopal_screpped.scrape_category(category_url="https://www.gopalnamkeen.com/categories/namkeen")
+  gopal_screpped.scrape_category(category_url="https://www.gopalnamkeen.com/categories/newly-launched")

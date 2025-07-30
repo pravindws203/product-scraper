@@ -367,5 +367,5 @@ class Bowlful:
 
 
 if __name__ == "__main__":
-  obj = Bowlful(headless=False)
+  obj = Bowlful(headless=True)
   obj.scrape_category(category_url="https://bowlfulstore.com/collections/all-product")

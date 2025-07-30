@@ -8,11 +8,9 @@ A modular scraper for HerbalBAPS product data with:
 
 import os
 import re
-import csv
 import time
 import json
 import random
-from distutils.command.clean import clean
 
 import requests
 from logger_config import setup_logger
@@ -65,7 +63,7 @@ class HerbalBAPS:
     self.MAX_SCROLL_RETRIES = 10
     self.SCROLL_PAUSE_TIME = 5
     self.MAX_RETRIES = 3
-    self.PAGE_LOAD_TIMEOUT = 30
+    self.PAGE_LOAD_TIMEOUT = 60
     self.REQUEST_TIMEOUT = 30
   
   def _setup_logging(self):
@@ -92,7 +90,7 @@ class HerbalBAPS:
       
       self.driver = webdriver.Chrome(options=options)
       self.driver.set_page_load_timeout(self.PAGE_LOAD_TIMEOUT)
-      return True
+      return self.driver
     except WebDriverException as e:
       self.logger.error(f"Driver initialization failed: {str(e)}")
       return False
@@ -187,6 +185,8 @@ class HerbalBAPS:
     """
     image_urls = []
     try:
+      wait = WebDriverWait(self.driver, self.PAGE_LOAD_TIMEOUT)
+      element = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "fotorama__nav__shaft")))
       nav_shaft = soup.find("div", class_="fotorama__nav__shaft")
       image_tags = nav_shaft.find_all("img")
       image_urls = [img['src'] for img in image_tags if img.get('src')]
@@ -284,7 +284,7 @@ class HerbalBAPS:
     Returns True if clicked, False if no next page.
     """
     try:
-        # Find the next button container
+        time.sleep(self.SCROLL_PAUSE_TIME + random.randint(4, 8))
         next_btn = self.driver.find_element(By.CSS_SELECTOR, 'li.pages-item-next a.action.next')
 
         # Check if the button is visible and enabled
@@ -343,7 +343,6 @@ class HerbalBAPS:
         soup = BeautifulSoup(self.driver.page_source, 'html.parser')
         details = self._extract_product_details(soup)
         images = self._get_images(soup)
-        
         product = {
           "variant_id": None,
           "name": details.get("product_name"),
@@ -404,9 +403,14 @@ class HerbalBAPS:
       for i, url in enumerate(product_urls, 1):
         product_data = self.get_product_details(url)
         if product_data.get("name"):
-          print(f"Scraped product {i}/{len(product_urls)}: {product_data}")
-          break
-          # inserted_id = self.db.insert_data("scrapped_data", product_data)
+          url = "http://10.0.101.153:10000/insert"
+          response = requests.post(url, json=product_data)
+          if response.status_code == 200:
+            self.logger.info(f"Inserted product with ID: {response.json().get('id')}")
+          else:
+            self.logger.error(f"Failed to insert product data: {response.status_code}")
+          
+          data = response.json()
           pbar.set_postfix({"Inserted product with ID": data.get('id', None)})
         else:
           self.logger.error(f"Failed to scrape product {i}/{url}")
@@ -423,3 +427,7 @@ class HerbalBAPS:
     finally:
       if self.driver:
         self.driver.quit()
+        
+if __name__ == "__main__":
+  obj = HerbalBAPS(headless=False)
+  obj.scrape_category(category_url="https://herbal.baps.org/herbal-food-supplements.html")

@@ -232,8 +232,8 @@ class Jiomart:
     if not self._safe_get(url):
         return []
     
-    time.sleep(5)
-    # self.click_out_of_stock()
+    time.sleep(10)
+    self._load_all_products()
     # time.sleep(10)
     product_urls = set()
 
@@ -434,3 +434,9 @@ class Jiomart:
     except Exception as e:
       self.logger.error(f"Error during Google search: {e}")
       return None
+
+
+if __name__ == "__main__":
+  url = input("Enter Jiomart Scrap Category Url: ").strip()
+  jiomart_screpped = Jiomart(headless=False)
+  jiomart_screpped.scrape_category(category_url=url)

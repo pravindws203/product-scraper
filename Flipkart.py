@@ -420,6 +420,41 @@ class Flipkart:
     finally:
       if self.driver:
         self.driver.quit()
+  
+  def scrape_product(self, product_url: str) -> None:
+    """Main method to scrape an Amazon category"""
+    try:
+      if not self.init_driver():
+        raise WebDriverException("Failed to initialize WebDriver")
+      
+      if not product_url:
+        self.logger.error("No product URLs found")
+        return
+      
+      product_data = self.get_product_details(product_url)
+      if product_data:
+        # print(f"Scraped product {i}/{len(product_urls)}: {product_data}")
+        url = "http://10.0.101.153:10000/insert"
+        response = requests.post(url, json=product_data)
+        if response.status_code == 200:
+          self.logger.info(f"Inserted product with ID: {response.json().get('id')}")
+        else:
+          self.logger.error(f"Failed to insert product data: {response.status_code}")
+      
+      else:
+        self.logger.error(f"Failed to scrape product {product_url}")
+        
+        time.sleep(random.randint(2, 5))
+      
+      self.logger.info(f"Completed scraping. Results saved in DATABASE")
+    
+    except KeyboardInterrupt:
+      self.logger.info("\nScraping stopped by user")
+    except Exception as e:
+      self.logger.error(f"Critical error: {e}", exc_info=True)
+    finally:
+      if self.driver:
+        self.driver.quit()
 
 if __name__ == "__main__":
   obj = Flipkart(headless=False)
