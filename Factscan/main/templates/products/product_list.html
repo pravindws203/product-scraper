@@ -1,112 +1,209 @@
 {% load math_filters %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 font-sans text-slate-800">
 
-<div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-6 text-center">Products List</h1>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-    <div class="overflow-x-auto shadow-lg rounded-lg bg-white p-4">
-        <table class="min-w-full divide-y divide-gray-200 text-sm text-left">
-            <thead class="bg-gray-100">
-                <tr>
-                    <th class="px-4 py-3 font-semibold text-gray-700">Product ID</th>
-                    <th class="px-4 py-3 font-semibold text-gray-700">Product Name</th>
-                    <th class="px-4 py-3 font-semibold text-gray-700">Product Barcode</th>
-                    <th class="px-4 py-3 font-semibold text-gray-700">Product Status</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                {% for product in page_obj %}
-                <tr class="hover:bg-gray-50">
-                    <td class="px-4 py-2 text-blue-600 hover:underline">
-                        <a href="{% url 'product_detail' product.id %}">
-                            {{ product.id }}
-                        </a>
-                    </td>
-                    <td class="px-4 py-2 text-blue-600 hover:underline">
-                        <a href="{% url 'product_detail' product.id %}">
-                            {{ product.name }}
-                        </a>
-                    </td>
-                    <td class="px-4 py-2">
-                        {{ product.barcode }}
-                    </td>
-                    <td class="px-4 py-2">
-                        <span class="inline-block px-2 py-1 rounded-full text-xs font-medium
-                            {% if product.status == 'imageprocessed' %}
-                                bg-green-100 text-green-800
-                            {% elif product.status == 'raw' %}
-                                bg-red-100 text-red-800
-                            {% else %}
-                                bg-gray-100 text-gray-800
-                            {% endif %}">
-                            {{ product.status }}
-                        </span>
-                    </td>
-                </tr>
-                {% empty %}
-                <tr>
-                    <td colspan="4" class="px-4 py-4 text-center text-gray-500">No products found.</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+        <header class="mb-8">
+            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Product Inventory 📦</h1>
+            <p class="mt-2 text-lg text-slate-600">Browse, search, and manage your product catalog.</p>
+        </header>
 
-    <!-- Pagination Controls -->
-    <div class="mt-6 flex justify-center">
-        <nav class="inline-flex -space-x-px text-sm">
-            {% if page_obj.has_previous %}
-                <a href="?page=1" class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-100">&laquo; First</a>
-                <a href="?page={{ page_obj.previous_page_number }}" class="px-3 py-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-100">Previous</a>
-            {% endif %}
+        <div class="bg-white p-4 sm:p-6 rounded-xl shadow-sm mb-8">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
 
+                <div class="flex flex-col sm:flex-row flex-wrap items-center gap-4 w-full lg:w-auto">
+                    <form method="get" class="w-full sm:w-auto grow lg:grow-0">
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <svg class="w-5 h-5 text-slate-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" /></svg>
+                            </span>
+                            <input type="text" name="search" placeholder="Search by name..." value="{{ search_query }}" class="w-full rounded-lg border border-slate-300 py-2 pl-10 pr-4 text-slate-800 placeholder-slate-400 shadow-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition" />
+                            {% if status_filter %}<input type="hidden" name="status" value="{{ status_filter }}">{% endif %}
+                            {% if limit %}<input type="hidden" name="limit" value="{{ limit }}">{% endif %}
+                        </div>
+                        <button type="submit" class="hidden">Search</button>
+                    </form>
 
-            {% comment %} Calculate start and end page numbers for the pagination buttons {% endcomment %}
-            {% with total=page_obj.paginator.num_pages current=page_obj.number %}
-                {% with left=2 right=2 %}
-                    {% with start=current|subtract:left end=current|add:right %}
-                        {% if start < 1 %}
-                            {% with offset=1|subtract:start %}
-                                {% with start=1 end=end|add:offset %}
-                                {% endwith %}
-                            {% endwith %}
-                        {% endif %}
-                        {% if end > total %}
-                            {% with offset=end|subtract:total %}
-                                {% with end=total start=start|subtract:offset %}
-                                    {% if start < 1 %}
-                                        {% with start=1 %}
-                                        {% endwith %}
-                                    {% endif %}
-                                {% endwith %}
-                            {% endwith %}
+                    <div class="flex items-center gap-3 w-full sm:w-auto">
+                        <form method="get" class="w-1/2 sm:w-auto">
+                            {% if search_query %}<input type="hidden" name="search" value="{{ search_query }}">{% endif %}
+                            {% if limit %}<input type="hidden" name="limit" value="{{ limit }}">{% endif %}
+                            <select name="status" onchange="this.form.submit()" class="w-full rounded-lg border border-slate-300 py-2 px-3 text-slate-800 shadow-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition">
+                                <option value="">All Statuses</option>
+                                {% for status in status_choices %}
+                                <option value="{{ status }}" {% if status == status_filter %}selected{% endif %}>{{ status|capfirst }}</option>
+                                {% endfor %}
+                            </select>
+                        </form>
+                        <form method="get" class="w-1/2 sm:w-auto">
+                             {% if search_query %}<input type="hidden" name="search" value="{{ search_query }}">{% endif %}
+                             {% if status_filter %}<input type="hidden" name="status" value="{{ status_filter }}">{% endif %}
+                            <select name="limit" onchange="this.form.submit()" class="w-full rounded-lg border border-slate-300 py-2 px-3 text-slate-800 shadow-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition">
+                                {% for value in limits %}
+                                <option value="{{ value }}" {% if value == limit %}selected{% endif %}>Show {{ value }}</option>
+                                {% endfor %}
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                {% if page_obj.paginator.num_pages > 1 %}
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-4">
+                    <p class="text-sm text-slate-600">
+                        Showing <span class="font-semibold text-slate-800">{{ page_obj.start_index }}</span>-<span class="font-semibold text-slate-800">{{ page_obj.end_index }}</span> of <span class="font-semibold text-slate-800">{{ page_obj.paginator.count }}</span>
+                    </p>
+                    <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+                         {% if page_obj.has_previous %}
+                            <a href="?page=1{% if search_query %}&search={{ search_query }}{% endif %}{% if status_filter %}&status={{ status_filter }}{% endif %}{% if limit %}&limit={{ limit }}{% endif %}" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-slate-500 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 transition-colors">
+                                <span class="sr-only">First</span> &laquo;
+                            </a>
+                            <a href="?page={{ page_obj.previous_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if status_filter %}&status={{ status_filter }}{% endif %}{% if limit %}&limit={{ limit }}{% endif %}" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 transition-colors">
+                                Prev
+                            </a>
+                        {% else %}
+                            <a class="relative inline-flex items-center rounded-l-md px-2 py-2 text-slate-500 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 transition-colors" aria-disabled="true" >
+                                <span class="sr-only">First</span> &laquo;
+                            </a>
+                            <a class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 transition-colors" aria-disabled="true" >
+                                Prev
+                            </a>
                         {% endif %}
 
-                        {% for i in start|to:end %}
-                            {% if i == page_obj.number %}
-                                <span class="px-3 py-2 border border-gray-300 bg-gray-200 text-gray-800 font-semibold">{{ i }}</span>
-                            {% else %}
-                                <a href="?page={{ i }}" class="px-3 py-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-100">{{ i }}</a>
+                        {% for i in page_obj.paginator.page_range %}
+                            {% if page_obj.number <= 3 and i <= 5 or page_obj.number >= page_obj.paginator.num_pages|add:'-2' and i >= page_obj.paginator.num_pages|add:'-4' or i >= page_obj.number|add:'-2' and i <= page_obj.number|add:'2' %}
+                                {% if i == page_obj.number %}
+                                <span aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">{{ i }}</span>
+                                {% else %}
+                                <a href="?page={{ i }}{% if search_query %}&search={{ search_query }}{% endif %}{% if status_filter %}&status={{ status_filter }}{% endif %}{% if limit %}&limit={{ limit }}{% endif %}" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-900 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 transition-colors">{{ i }}</a>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
-                    {% endwith %}
-                {% endwith %}
-            {% endwith %}
 
-            {% if page_obj.has_next %}
-                <a href="?page={{ page_obj.next_page_number }}" class="px-3 py-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-100">Next</a>
-                <a href="?page={{ page_obj.paginator.num_pages }}" class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-100">Last &raquo;</a>
-            {% endif %}
-        </nav>
+                        {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if status_filter %}&status={{ status_filter }}{% endif %}{% if limit %}&limit={{ limit }}{% endif %}" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 transition-colors">
+                                Next
+                            </a>
+                            <a href="?page={{ page_obj.paginator.num_pages }}{% if search_query %}&search={{ search_query }}{% endif %}{% if status_filter %}&status={{ status_filter }}{% endif %}{% if limit %}&limit={{ limit }}{% endif %}" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-slate-500 ring-1 ring-inset ring-slate-300 hover:bg-slate-50 focus:z-20 focus:outline-offset-0 transition-colors">
+                                <span class="sr-only">Last</span> &raquo;
+                            </a>
+                        {% endif %}
+                    </nav>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="overflow-hidden shadow-lg sm:rounded-xl bg-white">
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-slate-200">
+                    <thead class="bg-slate-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">Product ID</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">Name</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">Barcode</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">Status</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider">Imported</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        {% for product in page_obj %}
+                        <tr class="hover:bg-slate-50 transition-colors duration-150">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                                <a href="{% url 'product_detail' product.id %}?page={{ request.GET.page|default:1 }}&limit={{ limit }}&search={{ search_query }}&status={{ status_filter }}">
+                                    {{ product.id }}
+                                </a>
+                            </td>
+
+                            <td class="px-6 py-4 text-sm font-medium text-slate-900 max-w-sm">{{ product.name }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                {% if product.barcode %}
+                                <span class="font-mono text-indigo-600 hover:text-indigo-800 hover:underline cursor-pointer" onclick="openBarcodeModal('{{ product.barcode }}')">
+                                    {{ product.barcode }}
+                                </span>
+                                {% else %}
+                                <span class="text-slate-400 italic">N/A</span>
+                                {% endif %}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold
+                                    {% if product.status == 'imageprocessed' %} bg-green-100 text-green-800
+                                    {% elif product.status == 'raw' %} bg-amber-100 text-amber-800
+                                    {% else %} bg-slate-100 text-slate-800 {% endif %}">
+                                    {{ product.status|capfirst }}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold
+                                    {% if product.is_uploaded %} bg-blue-100 text-blue-800
+                                    {% else %} bg-red-100 text-red-800 {% endif %}">
+                                    {% if product.is_uploaded %}Yes{% else %}No{% endif %}
+                                </span>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="5" class="text-center py-16 px-6 text-slate-500">
+                                <div class="flex flex-col items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg>
+                                    <p class="font-semibold">No products found.</p>
+                                    <p class="text-sm">Try adjusting your search or filters.</p>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="barcodeModal" class="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+            <div class="bg-white p-6 rounded-xl shadow-2xl w-full max-w-sm relative text-center">
+                <button onclick="closeBarcodeModal()" class="absolute top-3 right-3 text-slate-400 hover:text-slate-600 transition-colors" aria-label="Close modal">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+                <h3 class="text-lg font-bold mb-4 text-slate-900">Barcode Preview</h3>
+                <div class="bg-slate-50 p-4 rounded-lg">
+                   <img id="barcodeImage" class="mx-auto h-20 object-contain" src="" alt="Barcode Image">
+                </div>
+                <button onclick="closeBarcodeModal()" class="mt-6 w-full bg-slate-600 text-white px-4 py-2.5 rounded-lg font-semibold hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition-all">
+                    Close
+                </button>
+            </div>
+        </div>
     </div>
-</div>
+
+    <script>
+        function openBarcodeModal(barcode) {
+            const modal = document.getElementById('barcodeModal');
+            const barcodeImage = document.getElementById('barcodeImage');
+            if (barcode) {
+                barcodeImage.src = `https://barcode.tec-it.com/barcode.ashx?data=${encodeURIComponent(barcode)}&code=Code128&translate-esc=on`;
+                barcodeImage.alt = `Barcode for ${barcode}`;
+            }
+            modal.classList.remove('hidden');
+        }
+
+        function closeBarcodeModal() {
+            const modal = document.getElementById('barcodeModal');
+            modal.classList.add('hidden');
+            document.getElementById('barcodeImage').src = ''; // Clear src to prevent flashing old image
+        }
+
+        // Optional: Close modal with Escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !document.getElementById('barcodeModal').classList.contains('hidden')) {
+                closeBarcodeModal();
+            }
+        });
+    </script>
 
 </body>
 </html>
