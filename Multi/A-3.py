@@ -65,7 +65,6 @@ class Amazon:
     def _configure_constants(self):
         """Initialize scraper constants"""
         self.BASE_URL = "https://www.amazon.in/"
-        self.API_ENDPOINT = "http://10.0.101.117:1001/insert"  # API URL configured here
         self.USER_AGENTS = [
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
             'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
@@ -879,11 +878,6 @@ class Amazon:
             if product_data:
                 self.logger.info(f"Scraped data: {json.dumps(product_data, indent=2, ensure_ascii=False)}")
                 try:
-                    response = requests.post(self.API_ENDPOINT, json=product_data, timeout=self.REQUEST_TIMEOUT)
-                    if response.status_code == 200:
-                        self.logger.info(f"Successfully inserted product. ID: {response.json().get('id')}")
-                    else:
-                        self.logger.error(f"API Error: Failed to insert product data. Status: {response.status_code}, Response: {response.text}")
                 except requests.exceptions.RequestException as e:
                     self.logger.error(f"Network Error: Could not connect to API endpoint {self.API_ENDPOINT}. Error: {e}")
             else:
