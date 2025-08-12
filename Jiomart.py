@@ -481,7 +481,7 @@ class Jiomart:
             self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", first_div)
 
             first_div.click()
-            self.logger.info("✅ 'Include Out of stock' filter clicked via div.")
+            self.logger.info("Include Out of stock' filter clicked via div.")
 
         except Exception as e:
             self.logger.error("Error clicking out-of-stock checkbox via div", exc_info=True)
