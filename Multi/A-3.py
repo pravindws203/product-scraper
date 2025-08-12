@@ -21,6 +21,8 @@ import requests
 from typing import Dict, List, Optional, Any
 from urllib.parse import urlparse, urlunparse
 from bs4 import BeautifulSoup
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -47,7 +49,7 @@ if sys.platform.startswith('win'):
 
 
 class Amazon:
-    def __init__(self, headless: bool = True):
+    def __init__(self, headless: bool = True, base_url: str = "https://www.amazon.in/"):
         """
         Initialize the Amazon scraper
 
@@ -57,11 +59,11 @@ class Amazon:
         self._setup_logging()
         self.headless = headless
         self.driver = None
+        self.BASE_URL = base_url
         self._configure_constants()
 
     def _configure_constants(self):
         """Initialize scraper constants"""
-        self.BASE_URL = "https://www.amazon.in/"
         self.API_ENDPOINT = "http://10.0.101.117:1001/insert"
         self.USER_AGENTS = [
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
@@ -110,8 +112,10 @@ class Amazon:
             options.add_argument('--disable-web-security')
             options.add_argument('--allow-running-insecure-content')
             options.add_argument('--disable-extensions')
-
-            self.driver = webdriver.Chrome(options=options)
+            options.add_argument('--ignore-certificate-errors')
+            options.add_argument('--allow-insecure-localhost')
+            
+            self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
             self.driver.set_page_load_timeout(self.PAGE_LOAD_TIMEOUT)
             self.logger.info("WebDriver initialized successfully.")
             return True
@@ -232,7 +236,6 @@ class Amazon:
             # 3. Popup selectors
             popup_selectors = [
                 # Continue Shopping
-                'button.a-button-text',
                 'input[aria-label*="Continue shopping"]',
                 'button[aria-label*="Continue shopping"]',
                 'input[value*="Continue shopping"]',
@@ -249,7 +252,7 @@ class Amazon:
                 'input[id*="accept-cookies"]',
                 'button[id*="accept-cookies"]',
                 'input[aria-label*="Accept cookies"]',
-                'button:contains("Accept")',
+                (By.XPATH, '//button[contains(text(), "Accept")]'),
 
                 # Generic close
                 'button[aria-label*="Close"]',
@@ -261,16 +264,20 @@ class Amazon:
                 'div.g-recaptcha',
                 'div[class*="recaptcha"]',
             ]
-
+            
             for selector in popup_selectors:
-                try:
-                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
-                    for el in elements:
-                        if el.is_displayed():
-                            self.logger.warning(f"⚠️ Popup or blocking element visible: {selector}")
-                            return True
-                except (NoSuchElementException, TimeoutException, StaleElementReferenceException):
-                    continue
+              try:
+                if isinstance(selector, tuple) and selector[0] == By.XPATH:
+                  elements = self.driver.find_elements(By.XPATH, selector[1])
+                else:
+                  elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                
+                for el in elements:
+                  if el.is_displayed():
+                    self.logger.warning(f"⚠️ Popup or blocking element visible: {selector}")
+                    return True
+              except (NoSuchElementException, TimeoutException, StaleElementReferenceException):
+                continue
 
             return False
 
@@ -461,7 +468,7 @@ class Amazon:
             try:
                 # FIXED: Removed emoji from log message
                 self.logger.info(f"Navigation attempt {attempt + 1}/{self.MAX_RETRIES}")
-
+                self.driver.get(url)
                 WebDriverWait(self.driver, self.ELEMENT_WAIT_TIMEOUT).until(
                     EC.presence_of_element_located((By.TAG_NAME, "body"))
                 )
@@ -674,7 +681,7 @@ class Amazon:
                 wait = WebDriverWait(self.driver, 10)
                 self.driver.execute_script(
                     f"window.scrollTo(0, {last_height - footer_height - random.randint(600, 700)});")
-                time.sleep(self.SCROLL_PAUSE_TIME + random.random())
+                time.sleep(self.SCROLL_PAUSE_TIME + random.randint(3,6))
                 new_height = self.driver.execute_script("return document.body.scrollHeight")
 
                 try:
@@ -734,19 +741,25 @@ class Amazon:
             for product in product_link:
                 href = product.get('href')
                 if href and '/dp/' in href:
-                    product_urls.add('https://www.amazon.in' + href)
+                    product_urls.add(self.BASE_URL + href)
 
             for product in product_elements:
                 href = product.get('href')
                 if href and '/dp/' in href:
-                    product_urls.add('https://www.amazon.in' + href)
-
+                    product_urls.add(self.BASE_URL + href)
+                
+            links = self.driver.find_elements(By.XPATH, '//div[@data-testid="small-editorial-tile"]//a')
+            for link in links:
+              href = link.get_attribute("href")
+              if href and '/dp/' in href:
+                product_urls.add(self.BASE_URL + href)
+              
             links = soup.select('a.a-link-normal.s-no-outline[href*="/dp/"]')
             for link in links:
                 href = link.get('href')
                 clean_href = href.split('/ref=')[0]
                 if '/dp/' in clean_href:
-                    full_url = "https://www.amazon.in" + clean_href
+                    full_url = self.BASE_URL + clean_href
                     page_urls.add(full_url)
 
             if not page_urls:
@@ -778,7 +791,7 @@ class Amazon:
             WebDriverWait(self.driver, self.PAGE_LOAD_TIMEOUT).until(
                 EC.presence_of_element_located((By.ID, "productTitle"))
             )
-            time.sleep(random.uniform(1, 3))  # Small random delay
+            time.sleep(self.SCROLL_PAUSE_TIME + random.randint(3, 6))
             soup = BeautifulSoup(self.driver.page_source, 'html.parser')
 
             details = self._extract_product_details(soup)
@@ -916,11 +929,14 @@ if __name__ == "__main__":
     else:
         is_product = False
         print("Detected a Category URL.")
-
+    
+    parsed = urlparse(url)
+    base_domain = f"{parsed.scheme}://{parsed.netloc}"
+    
     headless_choice = input("Run in headless mode (browser not visible)? (Y/n): ").strip().lower()
     run_headless = headless_choice != 'n'
 
-    amazon_scraper = Amazon(headless=run_headless)
+    amazon_scraper = Amazon(headless=run_headless, base_url = base_domain)
 
     if is_product:
         amazon_scraper.scrape_product(product_url=url)
