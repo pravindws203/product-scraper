@@ -114,6 +114,10 @@ class Amazon:
             options.add_experimental_option('useAutomationExtension', False)
             # Keeping your other options
             options.add_argument('--disable-extensions')
+            options.add_argument('--disable-web-security')
+            options.add_argument('--allow-running-insecure-content')
+            options.add_argument('--ignore-certificate-errors')
+            options.add_argument('--allow-insecure-localhost')
 
             # Detect OS
             system_os = platform.system()
