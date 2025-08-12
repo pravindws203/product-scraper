@@ -11,7 +11,6 @@ A modular scraper for Amazon product data with:
 
 import os
 import re
-import csv
 import time
 import json
 import random
@@ -20,7 +19,7 @@ import locale
 from logger_config import setup_logger
 import requests
 from typing import Dict, List, Optional, Any
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlunparse
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -37,16 +36,14 @@ from tqdm import tqdm
 
 # Fix encoding issues for Windows
 if sys.platform.startswith('win'):
-    # Set console encoding to UTF-8
     os.environ['PYTHONIOENCODING'] = 'utf-8'
-    # Set locale for proper Unicode handling
     try:
         locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
     except locale.Error:
         try:
             locale.setlocale(locale.LC_ALL, 'C.UTF-8')
         except locale.Error:
-            pass  # Use system default
+            pass
 
 
 class Amazon:
@@ -65,10 +62,15 @@ class Amazon:
     def _configure_constants(self):
         """Initialize scraper constants"""
         self.BASE_URL = "https://www.amazon.in/"
+        self.API_ENDPOINT = "http://10.0.101.117:1001/insert"
         self.USER_AGENTS = [
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0',
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0',
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edge/114.0.1823.67',
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; AS; Desktop) like Gecko',
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Brave/1.43.88',
+          'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Vivaldi/5.8.2945.60'
         ]
         self.MAX_SCROLL_RETRIES = 10
         self.SCROLL_PAUSE_TIME = 4
@@ -769,6 +771,9 @@ class Amazon:
             return {}
 
         try:
+            parsed_url = urlparse(url)
+            base_url = urlunparse(parsed_url._replace(query=""))
+            
             # Wait for a key element to ensure the page is loaded
             WebDriverWait(self.driver, self.PAGE_LOAD_TIMEOUT).until(
                 EC.presence_of_element_located((By.ID, "productTitle"))
@@ -791,7 +796,7 @@ class Amazon:
             product = {
                 "variant_id": None,
                 "name": safe_find_text(soup, '#productTitle'),
-                "product_url": url,
+                "product_url": base_url,
                 "brand_name": details.get('brand'),
                 "category": None, "sub_category": None,
                 "diet": self.get_diet(details.get('ingredient_type')),
@@ -876,8 +881,14 @@ class Amazon:
 
             product_data = self.get_product_details(product_url)
             if product_data:
+                print(product_data)
                 self.logger.info(f"Scraped data: {json.dumps(product_data, indent=2, ensure_ascii=False)}")
                 try:
+                    response = requests.post(self.API_ENDPOINT, json=product_data, timeout=self.REQUEST_TIMEOUT)
+                    if response.status_code == 200:
+                        self.logger.info(f"Successfully inserted product. ID: {response.json().get('id')}")
+                    else:
+                        self.logger.error(f"API Error: Failed to insert product data. Status: {response.status_code}, Response: {response.text}")
                 except requests.exceptions.RequestException as e:
                     self.logger.error(f"Network Error: Could not connect to API endpoint {self.API_ENDPOINT}. Error: {e}")
             else:
