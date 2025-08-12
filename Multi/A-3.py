@@ -11,16 +11,20 @@ A modular scraper for Amazon product data with:
 
 import os
 import re
+import sys
 import time
 import json
 import random
-import sys
 import locale
-from logger_config import setup_logger
 import requests
+import platform
+from tqdm import tqdm
+from bs4 import BeautifulSoup
+from logger_config import setup_logger
 from typing import Dict, List, Optional, Any
 from urllib.parse import urlparse, urlunparse
-from bs4 import BeautifulSoup
+
+from seleniumwire import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
@@ -33,8 +37,6 @@ from selenium.common.exceptions import (
     ElementClickInterceptedException,
     StaleElementReferenceException
 )
-from seleniumwire import webdriver
-from tqdm import tqdm
 
 # Fix encoding issues for Windows
 if sys.platform.startswith('win'):
@@ -96,6 +98,8 @@ class Amazon:
         Initialize and return a Chrome WebDriver.
         """
         try:
+            chrome_driver_path_windows = r"C:\path\to\chromedriver.exe"
+            chrome_driver_path_ubuntu = "/usr/local/bin/chromedriver"
             options = webdriver.ChromeOptions()
             if self.headless:
                 options.add_argument('--headless=new')
@@ -109,13 +113,31 @@ class Amazon:
             options.add_experimental_option("excludeSwitches", ["enable-automation"])
             options.add_experimental_option('useAutomationExtension', False)
             # Keeping your other options
-            options.add_argument('--disable-web-security')
-            options.add_argument('--allow-running-insecure-content')
             options.add_argument('--disable-extensions')
-            options.add_argument('--ignore-certificate-errors')
-            options.add_argument('--allow-insecure-localhost')
-            
-            self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
+            # Detect OS
+            system_os = platform.system()
+
+            if system_os == "Windows":
+              if os.path.exists(chrome_driver_path_windows):
+                print("Using local ChromeDriver (Windows)")
+                service = Service(chrome_driver_path_windows)
+              else:
+                print("Installing ChromeDriver (Windows)")
+                service = Service(ChromeDriverManager().install())
+
+            elif system_os == "Linux":
+              if os.path.exists(chrome_driver_path_ubuntu):
+                print("Using local ChromeDriver (Ubuntu/Linux)")
+                service = Service(chrome_driver_path_ubuntu)
+              else:
+                print("Installing ChromeDriver (Ubuntu/Linux)")
+                service = Service(ChromeDriverManager().install())
+
+            else:
+              service = Service(ChromeDriverManager().install())
+
+            self.driver = webdriver.Chrome(service=service, options=options)
             self.driver.set_page_load_timeout(self.PAGE_LOAD_TIMEOUT)
             self.logger.info("WebDriver initialized successfully.")
             return True
@@ -264,14 +286,14 @@ class Amazon:
                 'div.g-recaptcha',
                 'div[class*="recaptcha"]',
             ]
-            
+
             for selector in popup_selectors:
               try:
                 if isinstance(selector, tuple) and selector[0] == By.XPATH:
                   elements = self.driver.find_elements(By.XPATH, selector[1])
                 else:
                   elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
-                
+
                 for el in elements:
                   if el.is_displayed():
                     self.logger.warning(f"⚠️ Popup or blocking element visible: {selector}")
@@ -747,13 +769,13 @@ class Amazon:
                 href = product.get('href')
                 if href and '/dp/' in href:
                     product_urls.add(self.BASE_URL + href)
-                
+
             links = self.driver.find_elements(By.XPATH, '//div[@data-testid="small-editorial-tile"]//a')
             for link in links:
               href = link.get_attribute("href")
               if href and '/dp/' in href:
                 product_urls.add(self.BASE_URL + href)
-              
+
             links = soup.select('a.a-link-normal.s-no-outline[href*="/dp/"]')
             for link in links:
                 href = link.get('href')
@@ -786,7 +808,7 @@ class Amazon:
         try:
             parsed_url = urlparse(url)
             base_url = urlunparse(parsed_url._replace(query=""))
-            
+
             # Wait for a key element to ensure the page is loaded
             WebDriverWait(self.driver, self.PAGE_LOAD_TIMEOUT).until(
                 EC.presence_of_element_located((By.ID, "productTitle"))
@@ -929,10 +951,10 @@ if __name__ == "__main__":
     else:
         is_product = False
         print("Detected a Category URL.")
-    
+
     parsed = urlparse(url)
     base_domain = f"{parsed.scheme}://{parsed.netloc}"
-    
+
     headless_choice = input("Run in headless mode (browser not visible)? (Y/n): ").strip().lower()
     run_headless = headless_choice != 'n'
 
